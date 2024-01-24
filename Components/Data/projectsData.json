@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Pokedex",
+        "img": "pokedex.png",
+        "date": "NOV 23",
+        "minidescription": "Explore os Pokémon de forma intuitiva, pesquisando-os com as setas ou utilizando a barra de pesquisa, tanto por número quanto por nome.",
+        "description": "Este marco representa o meu projeto inaugural em JavaScript. Utilizei a Poke API para obter informações como nomes, números e imagens de todos os Pokémon. Agora, é possível explorar os Pokémon de forma intuitiva, pesquisando-os com as setas ou utilizando a barra de pesquisa, tanto por número quanto por nome.",
+        "repository": "https://github.com/pedrofsmartins3/Pokedex",
+        "site": "https://pedrofsmartins3.github.io/Pokedex/",
+        "language": "JavaScript"
+    },
+    {
+        "id": 2,
+        "title": "LeadStack",
+        "img": "leadstack.png",
+        "date": "NOV 23",
+        "minidescription": "Esta extensão permite capturar o URL de leads desejadas. Pode inserir manualmente o URL desejado ou optar por capturar automaticamente o URL da página aberta no seu navegador.",
+        "description": "Apresento a extensão para Google Chrome denominada 'Leads Stack'. Esta extensão permite capturar o URL de leads desejadas. Pode inserir manualmente o URL desejado ou optar por capturar automaticamente o URL da página aberta no seu navegador. As leads são acumuladas na extensão e armazenadas no LocalStorage. Além disso, é possível remover todas as leads ao clicar duas vezes no botão Remover",
+        "repository": "https://github.com/pedrofsmartins3/Chrome-Extension---Leads-Stack",
+        "site": "",
+        "language": "JavaScript"
+    },
+    {
+        "id": 3,
+        "title": "BlackJack",
+        "img": "blackjack.png",
+        "date": "DEZ 23",
+        "minidescription": "Insera o seu nome e jogue BlackJack, com a exibição de imagens das cartas e a lógica de soma e subtração dos pontos, conforme vença ou perca, respectivamente.",
+        "description": "Desenvolvi este projeto ao seguir um tutorial de JavaScript, aprimorando diversos aspectos. Introduzi melhorias, como a implementação de uma caixa para que o jogador possa inserir seu nome, a exibição de imagens das cartas, a criação da mesa de blackjack e a lógica para soma e subtração dos pontos, conforme o jogador vença ou perca, respectivamente.",
+        "repository": "https://github.com/pedrofsmartins3/BlackJack-Game",
+        "site": "https://pedrofsmartins3.github.io/BlackJack-Game/",
+        "language": "JavaScript"
+    },
+    {
+        "id": 4,
+        "title": "MemeGenerator",
+        "img": "meme.png",
+        "date": "JAN 24",
+        "minidescription": "Basta escolher uma frase para a parte superior e outra para a inferior da imagem, e prepare-se para rir com memes gerados instantaneamente ao clicar no botão.",
+        "description": "Este divertido projeto tem o incrível poder de criar memes automaticamente! Basta escolher uma frase para a parte superior e outra para a inferior da imagem, e prepare-se para rir com memes gerados instantaneamente ao clicar no botão. Afinal, quem disse que fazer memes não pode ser automágico e engraçado ao mesmo tempo?",
+        "repository": "",
+        "site": "",
+        "language": "React"
+    },
+    {
+        "id": 5,
+        "title": "Curriculum",
+        "img": "curriculum.png",
+        "date": "JAN 24",
+        "minidescription": "Apresento o meu currículo, que também representa um dos meus projetos em React. Disponível nas versões em português e inglês, basta clicar no botão no canto superior para testemunhar a magia acontecer.",
+        "description": "Apresento o meu currículo, que também representa um dos meus projetos em React. Disponível nas versões em português e inglês, basta clicar no botão no canto superior para testemunhar a magia acontecer. Destaco que realizei toda a tradução por meio do React, utilizando state e props, desde o elemento pai até os demais elementos filhos.",
+        "repository": "https://github.com/pedrofsmartins3/Curriculum-react-project-",
+        "site": "https://pedrofsmartins3.github.io/Curriculum-react-project-/",
+        "language": "React"
+    },
+    {
+        "id": 6,
+        "title": "Tenzies",
+        "img": "tenzies.png",
+        "date": "JAN 24",
+        "minidescription": "No jogo Tenzies o objetivo é rodar os dados até que todos mostrem o mesmo número. Ao clicar no botão os dados rodam simultaneamente. Clique nos que deseja segurar e continue a rodar os restantes.",
+        "description": "No jogo Tenzies o objetivo é rodar os dados até que todos mostrem o mesmo número. Ao clicar no botão os dados rodam simultaneamente. Você pode, depois de cada lançamento, segurar os dados que mostram o número desejado, clicando neles, e continuar a rodar os restantes. Desenvolvi este projeto enquanto seguia um tutorial, incorporando diversas melhorias. Realizei modificações no estilo e implementei um contador para o número de jogadas, assim como para o recorde alcançado. Destaco que o recorde é armazenado no LocalStorage.",
+        "repository": "https://github.com/pedrofsmartins3/Tenzies-react",
+        "site": "https://pedrofsmartins3.github.io/Tenzies-react/",
+        "language": "React"
+    }
+]
