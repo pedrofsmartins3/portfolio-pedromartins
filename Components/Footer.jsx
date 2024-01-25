@@ -1,4 +1,5 @@
 import SocialIcons from "./SocialIcons";
+import "./Style/Footer.css"
 
 export default function Footer() {
   return (

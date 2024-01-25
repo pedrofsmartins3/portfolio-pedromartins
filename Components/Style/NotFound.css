@@ -1,0 +1,10 @@
+.notfound-btn {
+    text-decoration: none;
+    background-color: var(--toggle-btn);
+    padding: 0.2em 1em;
+    color: var(--secondary-text-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+}

@@ -12,10 +12,10 @@ const ThemeContext = React.createContext();
 export default function App() {
   const localStorageTheme = JSON.parse(localStorage.getItem("key"));
 
-  const [theme, setTheme] = React.useState(localStorageTheme, "light");
+  const [theme, setTheme] = React.useState(localStorageTheme, false);
 
   return (
-    <div data-theme={theme}>
+    <div data-theme={theme ? "dark" : "light"}>
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <BrowserRouter>
           <Routes>

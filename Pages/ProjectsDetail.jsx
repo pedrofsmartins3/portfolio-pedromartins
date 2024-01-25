@@ -1,6 +1,7 @@
 import allProjects from "../Components/Data/projectsData.json";
 import { useParams, Link } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
+import "../Components/Style/Projects.css"
 
 export default function ProjectsDetail() {
   const params = useParams();

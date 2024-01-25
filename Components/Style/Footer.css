@@ -1,0 +1,21 @@
+footer {
+    background-color: var(--background-color);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.footer-title {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--primary-text-color)
+}
+
+.footer-copyright {
+    margin-top: 0;
+    color: #999;
+    font-size: 0.8rem;
+}

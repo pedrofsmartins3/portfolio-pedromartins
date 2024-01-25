@@ -1,6 +1,6 @@
 import banner from "/assets/banner.png";
 import RecentProjects from "../Components/RecentProjects";
-
+import "../Components/Style/Home.css"
 export default function Home() {
   return (
     <main>

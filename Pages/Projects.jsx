@@ -1,9 +1,10 @@
 import allProjects from "../Components/Data/projectsData.json";
 import CreateProjects from "../Components/CreateProjects"
+import "../Components/Style/Projects.css"
 
 export default function Projects() {
 
-  const newArray = [...allProjects]
+  const newArray = [...allProjects].reverse()
 
   return (
     <main>

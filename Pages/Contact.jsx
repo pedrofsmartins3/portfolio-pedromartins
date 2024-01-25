@@ -1,4 +1,5 @@
 import RecentProjects from "../Components/RecentProjects";
+import "../Components/Style/Contact.css"
 
 export default function Contact() {
   return (

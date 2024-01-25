@@ -1,0 +1,20 @@
+.toggle-container {
+    position: relative;
+}
+
+.toggle {
+    padding-top: 0.4em;
+    border: none;
+    background-color: transparent;
+    color: var(--primary-text-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        font-size: 2rem;
+    }
+}

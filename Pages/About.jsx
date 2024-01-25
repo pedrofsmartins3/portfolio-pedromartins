@@ -1,5 +1,6 @@
 import myPhoto from "/assets/Foto-Pedro.png";
 import RecentProjects from "../Components/RecentProjects";
+import "../Components/Style/About.css"
 
 export default function About() {
   return (

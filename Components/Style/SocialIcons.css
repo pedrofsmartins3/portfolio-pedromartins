@@ -1,0 +1,27 @@
+.social-icons-div {
+    display: flex;
+    gap: 0.4em;
+    padding: 0.2em 0.5em;
+    border-radius: 5px
+}
+
+.social-icons-div>a {
+    color: var(--primary-text-color);
+    font-size: 1.4rem;
+}
+
+.linkedin:hover {
+    color: #0072b1;
+}
+
+.instagram:hover {
+    color: #C13584;
+}
+
+.twitter:hover {
+    color: #0b7b5f;
+}
+
+.github:hover {
+    color: #c9510c;
+}
