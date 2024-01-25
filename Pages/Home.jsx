@@ -1,4 +1,4 @@
-import banner from "../assets/banner.png";
+import banner from "/assets/banner.png";
 import RecentProjects from "../Components/RecentProjects";
 
 export default function Home() {

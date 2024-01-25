@@ -1,4 +1,4 @@
-import myPhoto from "../assets/Foto-Pedro.png";
+import myPhoto from "/assets/Foto-Pedro.png";
 import RecentProjects from "../Components/RecentProjects";
 
 export default function About() {

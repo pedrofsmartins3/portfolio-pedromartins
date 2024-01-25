@@ -13,7 +13,7 @@ export default function RecentProjects() {
           <Link to={`/projects/${allProjects[index1].id}`}>
             <img
               className="project-img"
-              src={`../assets/${allProjects[index1].img}`}
+              src={`/assets/${allProjects[index1].img}`}
             />
             <div className="project-title-div">
               <h2 className="project-title">{allProjects[index1].title}</h2>
@@ -28,7 +28,7 @@ export default function RecentProjects() {
           <Link to={`/projects/${allProjects[index2].id}`}>
             <img
               className="project-img"
-              src={`../assets/${allProjects[index2].img}`}
+              src={`/assets/${allProjects[index2].img}`}
             />
             <div className="project-title-div">
               <h2 className="project-title">{allProjects[index2].title}</h2>
@@ -43,7 +43,7 @@ export default function RecentProjects() {
           <Link to={`/projects/${allProjects[index3].id}`}>
             <img
               className="project-img"
-              src={`../assets/${allProjects[index3].img}`}
+              src={`/assets/${allProjects[index3].img}`}
             />
             <div className="project-title-div">
               <h2 className="project-title">{allProjects[index3].title}</h2>

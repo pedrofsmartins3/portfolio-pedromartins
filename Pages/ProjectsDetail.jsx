@@ -17,7 +17,7 @@ export default function ProjectsDetail() {
           <h2 className="page-title">{allProjects[params.id - 1].title}</h2>
           <img
             className="project-img"
-            src={`../assets/${allProjects[params.id - 1].img}`}
+            src={`/assets/${allProjects[params.id - 1].img}`}
           />
 
           <span className="project-date">
