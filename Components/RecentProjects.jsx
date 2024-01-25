@@ -3,7 +3,7 @@ import CreateProjects from "./CreateProjects"
 
 export default function RecentProjects() {
 
-  const newArray = allProjects.slice(allProjects.length - 3, allProjects.length)
+  const newArray = allProjects.slice(allProjects.length - 3, allProjects.length).reverse()
 
   return (
       <>

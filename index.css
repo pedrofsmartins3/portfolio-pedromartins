@@ -48,7 +48,7 @@ h1 {
 }
 
 main {
-  padding: 2em;
+  padding: 1em;
   background-color: var(--foreground-color);
   color: var(--primary-text-color);
   display: flex;
