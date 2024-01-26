@@ -23,8 +23,18 @@ header {
     font-size: 1.6rem;
 }
 
+.header-link-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    color: var(--primary-text-color);
+    background-color: transparent;
+}
+
 .header-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .header-link,
@@ -43,10 +53,9 @@ header {
     color: rgba(136, 15, 15, 0.708);
 }
 
-.header-link:hover {
+.header-link-btn:hover {
     /* background-color: rgb(147, 96, 0); */
     background-color: #066669;
-    color: #ffffff
 }
 
 nav {
@@ -71,6 +80,7 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 0.5em;
         transform: top 2s ease-in-out 0s;
         display: none;
     }

@@ -31,15 +31,21 @@ export default function Header() {
         <FaBars />
       </div>
       <nav className="mainMenu" style={navStyle}>
-        <Link className="header-link" to="projects">
-          Projetos
-        </Link>
-        <Link className="header-link" to="about">
-          Sobre mim
-        </Link>
-        <Link className="header-link" to="contact">
-          Contactos
-        </Link>
+        <button className="header-link-btn" onClick={closeNav} >
+          <Link className="header-link" to="projects">
+            Projetos
+          </Link>
+        </button>
+        <button className="header-link-btn" onClick={closeNav} >
+          <Link className="header-link" to="about">
+            Sobre mim
+          </Link> 
+        </button>
+        <button className="header-link-btn" onClick={closeNav} >
+          <Link className="header-link" to="contact">
+            Contactos
+          </Link>
+        </button>
         <Toggle />
         <div className="navBtn close" onClick={closeNav}>
           <FaTimes />
