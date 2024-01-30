@@ -80,9 +80,9 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 0.5em;
-        transform: top 2s ease-in-out 0s;
-        display: none;
+        gap: 0.3em;
+        display: hidden;
+        transition: top 300ms ease-in-out;
     }
 
     .header-link {

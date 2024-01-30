@@ -6,6 +6,7 @@ import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
 import ProjectsDetail from "./Pages/ProjectsDetail";
 import NotFound from "./Pages/NotFound"
+import Certifications from "./Pages/Certifications"
 import React from "react";
 const ThemeContext = React.createContext();
 
@@ -23,6 +24,7 @@ export default function App() {
               <Route index element={<Home />} />
               <Route path="*" element={<NotFound />} />
               <Route path="about" element={<About />} />
+              <Route path="certifications" element={<Certifications />} />
               <Route path="contact" element={<Contact />} />
               <Route path="projects" element={<Projects />} />
               <Route path="projects/:id" element={<ProjectsDetail />} />

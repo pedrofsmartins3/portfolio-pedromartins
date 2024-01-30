@@ -10,7 +10,7 @@ export default function Header() {
   const [navStyle, setNavStyle] = React.useState({});
 
   function openNav() {
-    setNavStyle({ display: "flex", top: "0" });
+    setNavStyle({ display: 'flex', top: "0"});
   }
 
   function closeNav() {
@@ -34,6 +34,11 @@ export default function Header() {
         <button className="header-link-btn" onClick={closeNav} >
           <Link className="header-link" to="projects">
             Projetos
+          </Link>
+        </button>
+        <button className="header-link-btn" onClick={closeNav} >
+          <Link className="header-link" to="certifications">
+            Certificados
           </Link>
         </button>
         <button className="header-link-btn" onClick={closeNav} >
