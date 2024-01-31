@@ -73,7 +73,7 @@ nav {
         height: 100vh;
         background-color: var(--background-color);
         position: fixed;
-        top: 0px;
+        top: 100%;
         right: 0px;
         left: 0px;
         z-index: 10;
@@ -81,8 +81,7 @@ nav {
         justify-content: center;
         align-items: center;
         gap: 0.3em;
-        display: hidden;
-        transition: top 300ms ease-in-out;
+        transition: top 0.5s ease-in-out;
     }
 
     .header-link {

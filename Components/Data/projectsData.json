@@ -64,5 +64,16 @@
         "repository": "https://github.com/pedrofsmartins3/Tenzies-react",
         "site": "https://pedrofsmartins3.github.io/Tenzies-react/",
         "language": "React"
+    },
+    {
+        "id": 7,
+        "title": "Quote Machine",
+        "img": "quotemachine.png",
+        "date": "FEV 24",
+        "minidescription": "Neste incrível projeto, terás acesso a uma dose diária de inspiração! Basta clicar no botão e receber uma frase motivacional aleatória que impulsionará o seu dia.",
+        "description": "Neste incrível projeto, terás acesso a uma dose diária de inspiração! Basta clicar no botão e receber uma frase motivacional aleatória que impulsionará o seu dia. Sinta-se encorajado e pronto para enfrentar desafios! Após receber a uma dose de motivação, compartilhe instantaneamente essa energia positiva com seus amigos e seguidores clicando nos botões dedicados às redes sociais. Juntos, vamos espalhar motivação e inspiração!",
+        "repository": "https://github.com/pedrofsmartins3/Random-Quote-Machine",
+        "site": "https://pedrofsmartins3.github.io/Random-Quote-Machine/",
+        "language": "JavaScript"
     }
 ]
