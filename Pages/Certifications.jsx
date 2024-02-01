@@ -13,7 +13,6 @@ export default function Certifications() {
         <CreateCertificates certifications={newArray} />
       </section>
       <br></br>
-      <br></br>
     </main>
   );
 }

@@ -4,6 +4,13 @@
     max-width: 90%;
 }
 
+.certificate-div {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .certificate-img {
     width: 100%;
     height: 100%;
@@ -44,10 +51,6 @@
     color: var(--primary-text-color);
 }
 
-.certificate-date {
-    display: none;
-}
-
 .certificate-description {
     text-align: justify
 }
@@ -62,38 +65,6 @@
     margin: 1em 0 2em 0;
 }
 
-.certificate-div {
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-gap: 0 2em;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-        "Img"
-        "Title"
-        "Text";
-}
-
-.certificate-img {
-    grid-area: Img;
-}
-
-.certificate-title {
-    grid-area: Title;
-}
-
-.certificate-date {
-    grid-area: Date;
-}
-
-.certificate-description {
-    grid-area: Text;
-}
-
-.certificate-btn {
-    grid-area: Btn;
-}
-
 @media (min-width: 768px) {
 
     .certificates-container {
@@ -104,13 +75,17 @@
         max-width: 1400px;
         width: 100%;
         display: grid;
+        margin: auto;
         grid-gap: 0 2em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas:
             "Img Img Img Text Text Text Text"
             "Img Img Img Text Text Text Text"
-            "Title Title Title Text Text Text Text";
+            "Title Title Title Text Text Text Text"
+            "Date Date Date Text Text Text Text";
     }
 
     .certificate-description {
@@ -118,13 +93,49 @@
         padding-top: 0;
         margin-top: 0;
     }
+
+    .certificate-img {
+        grid-area: Img;
+    }
+
+    .certificate-title {
+        grid-area: Title;
+        margin-bottom: 0;
+    }
+
+    .certificate-date {
+        grid-area: Date;
+        margin-top: 0;
+        font-style: italic;
+    }
+
+    .certificate-description {
+        grid-area: Text;
+    }
+
+    .certificate-btn {
+        grid-area: Btn;
+    }
+}
+
+@media (min-width: 880px) {
+
+    .certificate-div {
+        max-width: 1000px;
+        width: 100%;
+        display: grid;
+        grid-gap: 0 2em;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "Img Img Img Text Text Text Text"
+            "Img Img Img Text Text Text Text"
+            "Title Title Title Text Text Text Text"
+            "Title Title Title Date Date Date Date";
+    }
 }
 
 @media (min-width: 1024px) {
-
-    .certificates-container {
-        width: 100%;
-    }
 
     .certificate-div {
         max-width: 1000px;
@@ -139,7 +150,8 @@
             "Img Img Img Date Date Date Date";
     }
 
-    .certificate-date {
-        display: block;
+    .certificate-title {
+        margin-bottom: 0.5em;
     }
+
 }
