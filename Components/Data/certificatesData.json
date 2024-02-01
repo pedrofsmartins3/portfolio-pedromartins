@@ -1,10 +1,26 @@
 [
     {
         "id": 1,
-        "title": "",
-        "img": "",
-        "date": "",
-        "description": "",
-        "url": ""
+        "title": "Responsive Web Design",
+        "img": "freecodecampwebdesign.png",
+        "date": "NOV 23",
+        "description": "Neste curso, explorei o Responsive Web Design, integrando HTML e CSS. Compreendi a importância de criar aplicações e sites responsivos para garantir uma experiência otimizada em todos os tamanhos de ecrãs. Este conhecimento aprimorado proporcionou-me habilidades cruciais para desenvolver interfaces consistentes e atrativas, promovendo acessibilidade e usabilidade notáveis.",
+        "url": "https://freecodecamp.org/certification/pedrofsmartins3/responsive-web-design"
+    },
+    {
+        "id": 2,
+        "title": "JavaScript & Data",
+        "img": "freecodecampjs.png",
+        "date": "DEZ 23",
+        "description": "Neste curso, aprofundei-me nas funcionalidades abrangentes do JavaScript, compreendendo minuciosamente os métodos essenciais, como split(), join(), map(), filter(), reduce(), for loops, forEach(), etc... Explorei desde as aplicações, das mais simples até as avançadas. Este conhecimento sólido proporcionou-me uma base sólida para aplicar esses métodos de forma eficaz em projetos práticos.",
+        "url": "https://www.freecodecamp.org/certification/pedrofsmartins3/javascript-algorithms-and-data-structures"
+    },
+    {
+        "id": 3,
+        "title": "The Frontend Path",
+        "img": "srimba.png",
+        "date": "JAN 24",
+        "description": "Um curso abrangente de Frontend, com 12 módulos, que oferece mais de 1000 aulas especializadas em HTML, CSS, JavaScript, APIs, UI Design e React, abrangendo desde conceitos básicos até avançados (Hooks, React.Router, React.Context, etc.). Com mais de 70 horas de aulas, este curso proporcionou prática intensiva, permitindo-me construir diversos projetos, desde simples cartões de visita e sites até aplicações completas com React.",
+        "url": "https://scrimba.com/certificate/uPzmqMhg/gfrontend"
     }
 ]

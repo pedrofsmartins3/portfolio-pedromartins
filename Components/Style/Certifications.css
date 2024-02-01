@@ -1,0 +1,145 @@
+.certificates-container {
+    display: flex;
+    gap: 2em;
+    max-width: 90%;
+}
+
+.certificate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 0.4em;
+}
+
+.certificate-title-div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.certificate-btn {
+    background-color: rgba(31, 106, 116, 0.2);
+    color: #fff;
+    padding: 0 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.75;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.certificate-btn:hover {
+    box-shadow: 1px 1px 1px 1px rgb(13, 43, 50);
+    border: #fff;
+}
+
+.certificate-date,
+.certificate-title,
+.certificate-description {
+    padding: 0;
+    margin: 0.5em 0;
+    color: var(--primary-text-color);
+}
+
+.certificate-date {
+    display: none;
+}
+
+.certificate-description {
+    text-align: justify
+}
+
+.certificate-link {
+    text-decoration: none;
+    color: var(--primary-text-color)
+}
+
+.recentprojects-title {
+    font-size: 1.4rem;
+    margin: 1em 0 2em 0;
+}
+
+.certificate-div {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 0 2em;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "Img"
+        "Title"
+        "Text";
+}
+
+.certificate-img {
+    grid-area: Img;
+}
+
+.certificate-title {
+    grid-area: Title;
+}
+
+.certificate-date {
+    grid-area: Date;
+}
+
+.certificate-description {
+    grid-area: Text;
+}
+
+.certificate-btn {
+    grid-area: Btn;
+}
+
+@media (min-width: 768px) {
+
+    .certificates-container {
+        width: 100%;
+    }
+
+    .certificate-div {
+        max-width: 1400px;
+        width: 100%;
+        display: grid;
+        grid-gap: 0 2em;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "Img Img Img Text Text Text Text"
+            "Img Img Img Text Text Text Text"
+            "Title Title Title Text Text Text Text";
+    }
+
+    .certificate-description {
+        text-align: justify;
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .certificates-container {
+        width: 100%;
+    }
+
+    .certificate-div {
+        max-width: 1000px;
+        width: 100%;
+        display: grid;
+        grid-gap: 0 2em;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "Img Img Img Title Title Title Title"
+            "Img Img Img Text Text Text Text"
+            "Img Img Img Date Date Date Date";
+    }
+
+    .certificate-date {
+        display: block;
+    }
+}
