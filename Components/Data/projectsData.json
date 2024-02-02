@@ -75,5 +75,16 @@
         "repository": "https://github.com/pedrofsmartins3/Random-Quote-Machine",
         "site": "https://pedrofsmartins3.github.io/Random-Quote-Machine/",
         "language": "JavaScript"
+    },
+    {
+        "id": 8,
+        "title": "Password Checker",
+        "img": "passwordchecker.png",
+        "date": "FEV 24",
+        "minidescription": "Neste site, poderá aprimorar a segurança da sua senha através de um teste especializado. Receba recomendações personalizadas para criar uma senha robusta, garantindo uma proteção eficaz.",
+        "description": "Neste site, poderá aprimorar a segurança da sua senha através de um teste especializado. Receba recomendações personalizadas para criar uma senha robusta, garantindo uma proteção eficaz. O site avalia automaticamente a força da sua senha, emitindo avisos sobre sua segurança, classificando-a como Fraca, Moderada ou Forte, proporcionando assim uma camada adicional de proteção para suas informações.",
+        "repository": "https://github.com/pedrofsmartins3/Password-Strength-Checker",
+        "site": "https://shiny-dolphin-0e24bf.netlify.app/",
+        "language": "JavaScript"
     }
 ]
