@@ -71,6 +71,15 @@
     align-self: baseline;
 }
 
+.showmore {
+    margin: 1em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 0.2em 0.6em;
+    border: none;
+    cursor: pointer;
+}
 
 @media (min-width: 712px) {
     .project-div {
