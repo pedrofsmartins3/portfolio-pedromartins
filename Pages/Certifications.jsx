@@ -11,7 +11,7 @@ export default function Certifications() {
 
   const data = language === "pt" ? pt : eng
 
-  const newArray = data.reverse()
+  const newArray = [...data].reverse()
 
   return (
     <main>
