@@ -1,4 +1,4 @@
-[
+export const pt = [
     {
         "id": 1,
         "title": "Responsive Web Design",
@@ -24,3 +24,30 @@
         "url": "https://scrimba.com/certificate/uPzmqMhg/gfrontend"
     }
 ]
+
+export const eng = [
+    {
+        "id": 1,
+        "title": "Responsive Web Design",
+        "img": "freecodecampwebdesign.png",
+        "date": "NOV 23",
+        "description": "In this course, I explored Responsive Web Design, integrating HTML and CSS. I understood the importance of creating responsive applications and websites to ensure an optimized experience on all screen sizes. This enhanced knowledge provided me with crucial skills to develop consistent and engaging interfaces, promoting notable accessibility and usability.",
+        "url": "https://freecodecamp.org/certification/pedrofsmartins3/responsive-web-design"
+    },
+    {
+        "id": 2,
+        "title": "JavaScript & Data",
+        "img": "freecodecampjs.png",
+        "date": "DEC 23",
+        "description": "In this course, I delved into the comprehensive features of JavaScript, thoroughly understanding essential methods such as split(), join(), map(), filter(), reduce(), for loops, forEach(), etc. I explored applications from the simplest to the most advanced. This solid knowledge provided me with a strong foundation to effectively apply these methods in practical projects.",
+        "url": "https://www.freecodecamp.org/certification/pedrofsmartins3/javascript-algorithms-and-data-structures"
+    },
+    {
+        "id": 3,
+        "title": "The Frontend Path",
+        "img": "srimba.png",
+        "date": "JAN 24",
+        "description": "A comprehensive Frontend course with 12 modules, offering over 1000 specialized lessons in HTML, CSS, JavaScript, APIs, UI Design, and React, covering basic to advanced concepts (Hooks, React.Router, React.Context, etc.). With over 70 hours of lessons, this course provided intensive practice, allowing me to build various projects, from simple business cards and websites to complete applications with React.",
+        "url": "https://scrimba.com/certificate/uPzmqMhg/gfrontend"
+    }
+];

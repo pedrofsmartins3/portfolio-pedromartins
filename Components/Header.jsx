@@ -4,10 +4,13 @@ import logo from "/assets/Foto-Pedro.png";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import Toggle from "./Toggle/Toggle";
-import "./Style/Header.css"
+import ToggleLanguage from "./Toggle/ToggleLanguage"
+import "./Style/Header.css";
+import { TextContext } from "../App"
 
 export default function Header() {
   const [navStyle, setNavStyle] = React.useState({});
+  const { text } = React.useContext(TextContext)
 
   function openNav() {
     setNavStyle({ display: 'flex', top: "0"});
@@ -23,7 +26,7 @@ export default function Header() {
         <Link className="header-logo" to="/">
           <div className="logo">
             <img className="logo-img" src={logo} alt="logo" width="50px" />
-            <h3 className="logo-title">Portfólio</h3>
+            <h3 className="logo-title">{text.header.title}</h3>
           </div>
         </Link>
       </div>
@@ -33,25 +36,26 @@ export default function Header() {
       <nav className="mainMenu" style={navStyle}>
         <button className="header-link-btn" onClick={closeNav} >
           <Link className="header-link" to="projects">
-            Projetos
+          {text.header.projects}
           </Link>
         </button>
         <button className="header-link-btn" onClick={closeNav} >
           <Link className="header-link" to="certifications">
-            Certificados
+          {text.header.certifications}
           </Link>
         </button>
         <button className="header-link-btn" onClick={closeNav} >
           <Link className="header-link" to="about">
-            Sobre mim
+          {text.header.about}
           </Link> 
         </button>
         <button className="header-link-btn" onClick={closeNav} >
           <Link className="header-link" to="contact">
-            Contactos
+          {text.header.contacts}
           </Link>
         </button>
         <Toggle />
+        <ToggleLanguage />
         <div className="navBtn close" onClick={closeNav}>
           <FaTimes />
         </div>

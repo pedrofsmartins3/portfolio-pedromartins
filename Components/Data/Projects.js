@@ -1,4 +1,4 @@
-[
+export const pt = [
     {
         "id": 1,
         "title": "Pokedex",
@@ -83,6 +83,97 @@
         "date": "FEV 24",
         "minidescription": "Neste site, poderá aprimorar a segurança da sua senha através de um teste especializado. Receba recomendações personalizadas para criar uma senha robusta, garantindo uma proteção eficaz.",
         "description": "Neste site, poderá aprimorar a segurança da sua senha através de um teste especializado. Receba recomendações personalizadas para criar uma senha robusta, garantindo uma proteção eficaz. O site avalia automaticamente a força da sua senha, emitindo avisos sobre sua segurança, classificando-a como Fraca, Moderada ou Forte, proporcionando assim uma camada adicional de proteção para suas informações.",
+        "repository": "https://github.com/pedrofsmartins3/Password-Strength-Checker",
+        "site": "https://shiny-dolphin-0e24bf.netlify.app/",
+        "language": "JavaScript"
+    }
+]
+
+export const eng = [
+    {
+        "id": 1,
+        "title": "Pokedex",
+        "img": "pokedex.png",
+        "date": "NOV 23",
+        "minidescription": "My inaugural project in JavaScript. Explore Pokémon intuitively by navigating with arrows or using the search bar, both by number and name.",
+        "description": "This milestone represents my inaugural project in JavaScript. I used the Poke API to obtain information such as names, numbers, and images of all Pokémon. Now, you can explore Pokémon intuitively by navigating with arrows or using the search bar, both by number and name.",
+        "repository": "https://github.com/pedrofsmartins3/Pokedex",
+        "site": "https://pedrofsmartins3.github.io/Pokedex/",
+        "language": "JavaScript"
+    },
+    {
+        "id": 2,
+        "title": "LeadStack",
+        "img": "leadstack.png",
+        "date": "NOV 23",
+        "minidescription": "This extension allows you to capture the URL of desired leads. You can manually enter the desired URL or choose to automatically capture the URL of the open page in your browser.",
+        "description": "Introducing the Google Chrome extension called 'Leads Stack.' This extension allows you to capture the URL of desired leads. You can manually enter the desired URL or choose to automatically capture the URL of the open page in your browser. The leads are accumulated in the extension and stored in LocalStorage. Additionally, you can remove all leads by double-clicking the Remove button.",
+        "repository": "https://github.com/pedrofsmartins3/Chrome-Extension---Leads-Stack",
+        "site": "",
+        "language": "JavaScript"
+    },
+    {
+        "id": 3,
+        "title": "BlackJack",
+        "img": "blackjack.png",
+        "date": "DEC 23",
+        "minidescription": "Enter your name and play BlackJack, with the display of card images and the logic of points addition and subtraction as you win or lose, respectively.",
+        "description": "I developed this project by following a JavaScript tutorial, enhancing various aspects. I introduced improvements, such as implementing a box for the player to enter their name, displaying card images, creating the blackjack table, and the logic for points addition and subtraction as the player wins or loses, respectively.",
+        "repository": "https://github.com/pedrofsmartins3/BlackJack-Game",
+        "site": "https://pedrofsmartins3.github.io/BlackJack-Game/",
+        "language": "JavaScript"
+    },
+    {
+        "id": 4,
+        "title": "MemeGenerator",
+        "img": "meme.png",
+        "date": "JAN 24",
+        "minidescription": "Just choose a phrase for the top and another for the bottom of the image, and get ready to laugh with memes generated instantly by clicking the button.",
+        "description": "This fun project has the incredible power to create memes automatically! Just choose a phrase for the top and another for the bottom of the image, and get ready to laugh with memes generated instantly by clicking the button. After all, who said making memes can't be both automatic and funny at the same time?",
+        "repository": "",
+        "site": "",
+        "language": "React"
+    },
+    {
+        "id": 5,
+        "title": "Curriculum",
+        "img": "curriculum.png",
+        "date": "JAN 24",
+        "minidescription": "Presenting my resume, which also represents one of my projects in React. Available in Portuguese and English, just click the button in the upper right corner!",
+        "description": "Presenting my resume, which also represents one of my projects in React. Available in Portuguese and English, just click the button in the upper right corner to witness the magic happen. I highlight that I performed the entire translation through React, using state and props, from the parent element to the other child elements.",
+        "repository": "https://github.com/pedrofsmartins3/Curriculum-react-project-",
+        "site": "https://pedrofsmartins3.github.io/Curriculum-react-project-/",
+        "language": "React"
+    },
+    {
+        "id": 6,
+        "title": "Tenzies",
+        "img": "tenzies.png",
+        "date": "JAN 24",
+        "minidescription": "In the Tenzies game, the goal is to have all dice show the same number. Click the button to roll the dice, click on the ones you want to hold, and continue rolling the rest.",
+        "description": "In the Tenzies game, the goal is to roll the dice until they all show the same number. Clicking the button rolls the dice simultaneously. After each roll, you can hold the dice showing the desired number by clicking on them and continue rolling the rest. I developed this project while following a tutorial, incorporating various improvements. I made modifications to the style and implemented a counter for the number of plays, as well as for the record achieved. I highlight that the record is stored in LocalStorage.",
+        "repository": "https://github.com/pedrofsmartins3/Tenzies-react",
+        "site": "https://pedrofsmartins3.github.io/Tenzies-react/",
+        "language": "React"
+    },
+    {
+        "id": 7,
+        "title": "Quote Machine",
+        "img": "quotemachine.png",
+        "date": "FEB 24",
+        "minidescription": "In this amazing project, you'll have access to a daily dose of inspiration! Just click the button and receive a random motivational quote that will boost your day.",
+        "description": "In this amazing project, you'll have access to a daily dose of inspiration! Just click the button and receive a random motivational quote that will boost your day. Feel encouraged and ready to face challenges! After receiving a dose of motivation, instantly share that positive energy with your friends and followers by clicking on the dedicated social media buttons. Together, let's spread motivation and inspiration!",
+        "repository": "https://github.com/pedrofsmartins3/Random-Quote-Machine",
+        "site": "https://pedrofsmartins3.github.io/Random-Quote-Machine/",
+        "language": "JavaScript"
+    },
+    {
+        "id": 8,
+        "title": "Password Checker",
+        "img": "passwordchecker.png",
+        "date": "FEB 24",
+        "minidescription": "On this site, you can enhance your password security through a specialized test. Receive personalized recommendations to create a strong password, ensuring effective protection.",
+        "description": "On this site, you can enhance your password security through a specialized test. Receive personalized recommendations to create a strong password, ensuring effective protection. The site automatically evaluates the strength of your password, issuing warnings about its security, categorizing it as Weak, Moderate, or Strong, providing an additional layer of protection for your information.",
         "repository": "https://github.com/pedrofsmartins3/Password-Strength-Checker",
         "site": "https://shiny-dolphin-0e24bf.netlify.app/",
         "language": "JavaScript"

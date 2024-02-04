@@ -11,7 +11,7 @@ export default function Toggle() {
     setTheme((prevTheme) => (!prevTheme));
   }
 
-  localStorage.setItem("key", JSON.stringify(theme));
+  localStorage.setItem("theme", JSON.stringify(theme));
 
   const icon = theme ? <BsToggle2On /> : <BsToggle2Off />;
 
