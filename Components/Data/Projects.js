@@ -85,7 +85,18 @@ export const pt = [
         "description": "Neste site, poderá aprimorar a segurança da sua senha através de um teste especializado. Receba recomendações personalizadas para criar uma senha robusta, garantindo uma proteção eficaz. O site avalia automaticamente a força da sua senha, emitindo avisos sobre sua segurança, classificando-a como Fraca, Moderada ou Forte, proporcionando assim uma camada adicional de proteção para suas informações.",
         "repository": "https://github.com/pedrofsmartins3/Password-Strength-Checker",
         "site": "https://shiny-dolphin-0e24bf.netlify.app/",
-        "language": "JavaScript"
+        "language": "React"
+    },
+    {
+        "id": 9,
+        "title": "Drum-machine",
+        "img": "drum.png",
+        "date": "FEV 24",
+        "minidescription": "Neste projeto, podes ser o mestre das batidas, criando a tua música única como um verdadeiro DJ! A mesa de Drum-machine oferece uma variedade de botões, cada um com uma batida ou som diferente.",
+        "description": "Neste projeto, podes ser o mestre das batidas, criando a tua música única como um verdadeiro DJ! A mesa de Drum-machine oferece uma variedade de botões, cada um com uma batida ou som diferente. Sinta-se à vontade para soltar sua criatividade, clicando nos botões com o rato ou usando as teclas do teclado correspondentes. Quem será capaz de produzir a melhor melodia?",
+        "repository": "https://github.com/pedrofsmartins3/drum-react-js",
+        "site": "https://fabulous-seahorse-52c736.netlify.app/",
+        "language": "React"
     }
 ]
 
@@ -176,6 +187,18 @@ export const eng = [
         "description": "On this site, you can enhance your password security through a specialized test. Receive personalized recommendations to create a strong password, ensuring effective protection. The site automatically evaluates the strength of your password, issuing warnings about its security, categorizing it as Weak, Moderate, or Strong, providing an additional layer of protection for your information.",
         "repository": "https://github.com/pedrofsmartins3/Password-Strength-Checker",
         "site": "https://shiny-dolphin-0e24bf.netlify.app/",
-        "language": "JavaScript"
+        "language": "React"
+    },
+    {
+        "id": 9,
+        "title": "Drum Machine",
+        "img": "drum.png",
+        "date": "FEB 24",
+        "minidescription": "In this project, you can be the master of beats, creating your unique music like a true DJ! The Drum Machine table offers a variety of buttons, each with a different beat or sound.",
+        "description": "In this project, you can be the master of beats, creating your unique music like a true DJ! The Drum Machine table offers a variety of buttons, each with a different beat or sound. Feel free to unleash your creativity by clicking the buttons with the mouse or using the corresponding keyboard keys. Who will be able to produce the best melody?",
+        "repository": "https://github.com/pedrofsmartins3/drum-react-js",
+        "site": "https://fabulous-seahorse-52c736.netlify.app/",
+        "language": "React"
     }
+
 ]

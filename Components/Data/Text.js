@@ -28,8 +28,8 @@ export const pt = {
     },
     projects: {
         title: "Os meus projetos",
-        btnShowMore: "Ver mais...",
-        btnShowLess: "Ver menos..."
+        btnShowMore: "Ver mais projetos...",
+        btnShowLess: "Ver menos projetos..."
     },
     recentprojects: {
         title: "Projetos mais recentes:"
@@ -86,8 +86,8 @@ export const eng = {
     },
     projects: {
         title: "My projects",
-        btnShowMore: "Show more...",
-        btnShowLess: "Show less..."
+        btnShowMore: "Show more projects...",
+        btnShowLess: "Show less projects..."
     },
     recentprojects: {
         title: "Most recent projects:"
