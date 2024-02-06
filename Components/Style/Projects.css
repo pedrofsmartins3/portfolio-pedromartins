@@ -86,4 +86,8 @@
     .project-div {
         width: 100%;
     }
+
+    .back-link {
+        padding-left: 2em;
+    }
 }
