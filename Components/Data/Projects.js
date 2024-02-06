@@ -84,7 +84,7 @@ export const pt = [
         "minidescription": "Neste site, poderá aprimorar a segurança da sua senha através de um teste especializado. Receba recomendações personalizadas para criar uma senha robusta, garantindo uma proteção eficaz.",
         "description": "Neste site, poderá aprimorar a segurança da sua senha através de um teste especializado. Receba recomendações personalizadas para criar uma senha robusta, garantindo uma proteção eficaz. O site avalia automaticamente a força da sua senha, emitindo avisos sobre sua segurança, classificando-a como Fraca, Moderada ou Forte, proporcionando assim uma camada adicional de proteção para suas informações.",
         "repository": "https://github.com/pedrofsmartins3/Password-Strength-Checker",
-        "site": "https://shiny-dolphin-0e24bf.netlify.app/",
+        "site": "https://password-strength-checker-pedro.netlify.app/",
         "language": "React"
     },
     {
@@ -94,8 +94,19 @@ export const pt = [
         "date": "FEV 24",
         "minidescription": "Neste projeto, podes ser o mestre das batidas, criando a tua música única como um verdadeiro DJ! A mesa de Drum-machine oferece uma variedade de botões, cada um com uma batida ou som diferente.",
         "description": "Neste projeto, podes ser o mestre das batidas, criando a tua música única como um verdadeiro DJ! A mesa de Drum-machine oferece uma variedade de botões, cada um com uma batida ou som diferente. Sinta-se à vontade para soltar sua criatividade, clicando nos botões com o rato ou usando as teclas do teclado correspondentes. Quem será capaz de produzir a melhor melodia?",
-        "repository": "https://github.com/pedrofsmartins3/drum-react-js",
-        "site": "https://fabulous-seahorse-52c736.netlify.app/",
+        "repository": "https://github.com/pedrofsmartins3/Calculator-React-js",
+        "site": "https://drum-machine-pedro-martins.netlify.app/",
+        "language": "React"
+    },
+    {
+        "id": 10,
+        "title": "Calculadora",
+        "img": "calculator.png",
+        "date": "FEV 24",
+        "minidescription": "Réplica da calculadora do iPhone. Com esta aplicação, poderás realizar todas as operações matemáticas essenciais que salvam o dia no trabalho e no cotidiano.",
+        "description": "Transformei as minhas habilidades de JavaScript numa ferramenta poderosa: uma réplica da calculadora do iPhone. Com esta aplicação, poderás realizar todas as operações matemáticas essenciais que salvam o dia no trabalho e no cotidiano. Cada função e método foi refinado meticulosamente para garantir um desempenho impecável da calculadora",
+        "repository": "https://github.com/pedrofsmartins3/Calculator-React-js",
+        "site": "https://calculator-react-js-pedro.netlify.app/",
         "language": "React"
     }
 ]
@@ -186,7 +197,7 @@ export const eng = [
         "minidescription": "On this site, you can enhance your password security through a specialized test. Receive personalized recommendations to create a strong password, ensuring effective protection.",
         "description": "On this site, you can enhance your password security through a specialized test. Receive personalized recommendations to create a strong password, ensuring effective protection. The site automatically evaluates the strength of your password, issuing warnings about its security, categorizing it as Weak, Moderate, or Strong, providing an additional layer of protection for your information.",
         "repository": "https://github.com/pedrofsmartins3/Password-Strength-Checker",
-        "site": "https://shiny-dolphin-0e24bf.netlify.app/",
+        "site": "https://password-strength-checker-pedro.netlify.app/",
         "language": "React"
     },
     {
@@ -197,8 +208,20 @@ export const eng = [
         "minidescription": "In this project, you can be the master of beats, creating your unique music like a true DJ! The Drum Machine table offers a variety of buttons, each with a different beat or sound.",
         "description": "In this project, you can be the master of beats, creating your unique music like a true DJ! The Drum Machine table offers a variety of buttons, each with a different beat or sound. Feel free to unleash your creativity by clicking the buttons with the mouse or using the corresponding keyboard keys. Who will be able to produce the best melody?",
         "repository": "https://github.com/pedrofsmartins3/drum-react-js",
-        "site": "https://fabulous-seahorse-52c736.netlify.app/",
+        "site": "https://drum-machine-pedro-martins.netlify.app/",
+        "language": "React"
+    },
+    {
+        "id": 10,
+        "title": "Calculator",
+        "img": "calculator.png",
+        "date": "FEB 24",
+        "minidescription": "Replica of the iPhone calculator. With this application, you can perform all the essential mathematical operations that save the day at work and in everyday life.",
+        "description": "I turned my JavaScript skills into a powerful tool: a replica of the iPhone calculator. With this application, you can perform all the essential mathematical operations that save the day at work and in everyday life. Each function and method has been meticulously refined to ensure flawless calculator performance.",
+        "repository": "https://github.com/pedrofsmartins3/Calculator-React-js",
+        "site": "https://calculator-react-js-pedro.netlify.app/",
         "language": "React"
     }
+
 
 ]
