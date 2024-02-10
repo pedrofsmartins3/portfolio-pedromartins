@@ -15,7 +15,7 @@ export const pt = {
         answer1: "Desde 2020, dedico-me exclusivamente ao mundo digital, destacando-me nas áreas de vendas, redes sociais e edição de vídeos. Há alguns meses, tive a oportunidade de ingressar no universo da programação e, voilà, apaixonei-me. Agora, minha mente está repleta de ideias grandiosas para criar e soluções inovadoras para contribuir ainda mais para este vasto mundo!"
     },
     about: {
-        title: "Olá, eu sou o Pedro Martins e seja bem vindo à minha jornada na programação!",
+        title: "Olá, eu sou o Pedro Martins!",
         question1: "Quem sou eu",
         answer1: "Tenho 26 anos, sou orgulhosamente pai e esposo. Apaixonado por desporto onde encontro não apenas uma fonte de saúde, mas também uma disciplina para a minha mente. Considero-me um eterno aprendiz do mundo, constantemente a absorver novos conhecimentos para aprimorar o meu entendimento e ação. Como bom comunicador, busco colaborar com pessoas que compartilham a minha visão e mentalidade. Sou uma pessoa dedicada e procuro aprimorar as minhas habilidades diariamente. Embora reconheça que não sei tudo, a minha determinação é inabalável, e enfrento os desafios diários com a convicção de que, através da perseverança, encontrarei soluções para qualquer problema. Este sou eu, uma pessoa com o desejo de evoluir e que busca pela excelência em tudo o que faz.",
         question2: "Porquê escolhi a programação",
@@ -43,7 +43,8 @@ export const pt = {
         answer2: "Clique aqui para ver o site!",
     },
     certifications: {
-        title: "Os meus certificados"
+        title: "Os meus certificados",
+        skills: "Habilidades"
     },
     createcertificate: {
         datetext: "Data de finalização"
@@ -74,7 +75,7 @@ export const eng = {
         answer1: "Since 2020, I have been exclusively dedicated to the digital world, excelling in areas such as sales, social media, and video editing. A few months ago, I had the opportunity to enter the programming universe, and voilà, I fell in love. Now, my mind is filled with grand ideas to create and innovative solutions to contribute even more to this vast world!"
     },
     about: {
-        title: "Hello, I'm Pedro Martins, and welcome to my programming journey!",
+        title: "Hello, I'm Pedro Martins!",
         question1: "Who am I",
         answer1: "I am 26 years old, proudly a father and husband. Passionate about sports, where I find not only a source of health but also a discipline for my mind. I consider myself an eternal learner of the world, constantly absorbing new knowledge to enhance my understanding and action. As a good communicator, I seek to collaborate with people who share my vision and mindset. I am a dedicated person and strive to improve my skills daily. Although I acknowledge that I don't know everything, my determination is unwavering, and I face daily challenges with the conviction that, through perseverance, I will find solutions to any problem. This is me, a person with the desire to evolve and pursue excellence in everything I do.",
         question2: "Why did I choose programming",
@@ -102,7 +103,8 @@ export const eng = {
         answer2: "Click here to view the website!",
     },
     certifications: {
-        title: "My certifications"
+        title: "My certifications",
+        skills: "Skills"
     },
     createcertificate: {
         datetext: "Finalization date"

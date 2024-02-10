@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   transition: background-color 300ms ease-in-out;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {

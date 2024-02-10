@@ -4,16 +4,16 @@ import logo from "/assets/Foto-Pedro.png";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import Toggle from "./Toggle/Toggle";
-import ToggleLanguage from "./Toggle/ToggleLanguage"
+import ToggleLanguage from "./Toggle/ToggleLanguage";
 import "./Style/Header.css";
-import { TextContext } from "../App"
+import { TextContext } from "../App";
 
 export default function Header() {
   const [navStyle, setNavStyle] = React.useState({});
-  const { text } = React.useContext(TextContext)
+  const { text } = React.useContext(TextContext);
 
   function openNav() {
-    setNavStyle({ display: 'flex', top: "0"});
+    setNavStyle({ display: "flex", top: "0" });
   }
 
   function closeNav() {
@@ -34,24 +34,24 @@ export default function Header() {
         <FaBars />
       </div>
       <nav className="mainMenu" style={navStyle}>
-        <button className="header-link-btn" onClick={closeNav} >
+        <button className="header-link-btn" onClick={closeNav}>
           <Link className="header-link" to="projects">
-          {text.header.projects}
+            {text.header.projects}
           </Link>
         </button>
-        <button className="header-link-btn" onClick={closeNav} >
+        <button className="header-link-btn" onClick={closeNav}>
           <Link className="header-link" to="certifications">
-          {text.header.certifications}
+            {text.header.certifications}
           </Link>
         </button>
-        <button className="header-link-btn" onClick={closeNav} >
+        <button className="header-link-btn" onClick={closeNav}>
           <Link className="header-link" to="about">
-          {text.header.about}
-          </Link> 
+            {text.header.about}
+          </Link>
         </button>
-        <button className="header-link-btn" onClick={closeNav} >
+        <button className="header-link-btn" onClick={closeNav}>
           <Link className="header-link" to="contact">
-          {text.header.contacts}
+            {text.header.contacts}
           </Link>
         </button>
         <Toggle />

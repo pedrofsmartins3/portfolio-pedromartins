@@ -11,6 +11,26 @@
     flex-direction: column;
 }
 
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 1em 0 2.5em 0;
+}
+
+
+.skills > img {
+    width: 80px;
+    margin: 0 0.25em;
+    border: none;
+    -moz-box-shadow: 10px 10px 5px var(--primary-text-color);
+    -webkit-box-shadow: 10px 10px 5px var(--primary-text-color);
+    box-shadow: 5px 5px 10px var(--primary-text-color);
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:1.2em;
+}
+
 .certificate-img {
     width: 100%;
     height: 100%;
@@ -66,6 +86,9 @@
 }
 
 @media (min-width: 768px) {
+
+    .skills > img {
+        width: 100px;}
 
     .certificates-container {
         width: 100%;
@@ -133,6 +156,9 @@
             "Title Title Title Text Text Text Text"
             "Title Title Title Date Date Date Date";
     }
+
+    .skills > img {
+        width: 110px;}
 }
 
 @media (min-width: 1024px) {
@@ -153,5 +179,12 @@
     .certificate-title {
         margin-bottom: 0.5em;
     }
+
+    .skills {
+        display: flex;
+    }
+
+    .skills > img {
+        width: 120px;}
 
 }

@@ -14,7 +14,7 @@ export default function Home() {
         <img className="banner" src={banner} alt="code-img" />
         <p className="title-description">{text.home.titledescription}</p>
       </section>
-      <section>
+      <section className="home-questions">
         <h2 className="homepage-subtitle">{text.home.question1}</h2>
         <p className="description">{text.home.answer1}</p>
       </section>
