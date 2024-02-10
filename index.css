@@ -24,7 +24,7 @@
 
 [data-theme="dark"] {
   --background-color: #000;
-  --foreground-color: #171615;
+  --foreground-color: linear-gradient(0deg, rgba(2,0,36,1) 19%, rgba(37,155,189,1) 69%, rgba(0,212,255,1) 100%);
   --primary-text-color: #fff;
   --secondary-text-color: #000;
   --toggle-btn: #e3e4e8;
@@ -55,7 +55,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 section {

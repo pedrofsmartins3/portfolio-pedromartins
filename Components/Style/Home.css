@@ -2,8 +2,9 @@
 
 .banner {
     align-self: center;
-    width: 70%;
-    border-radius: 10px;
+    width: 30%;
+    border: none;
+    border-radius: 33% 67% 53% 47% / 57% 77% 23% 43% ;
     box-shadow: 2px 2px 10px 1px black;
     margin: 1em;
 }
@@ -38,6 +39,7 @@
     font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
+
 }
 
 .page-subtitle {
@@ -50,5 +52,3 @@
     font-size: 1.2rem;
     text-align: center;
 }
-
-/* PAGES - END */

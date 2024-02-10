@@ -24,7 +24,8 @@ export const pt = {
     contact: {
         title: "Contactos",
         email: "Email",
-        phone: "Número de telefone"
+        phone: "Número de telefone",
+        social: "Redes sociais"
     },
     projects: {
         title: "Os meus projetos",
@@ -82,7 +83,8 @@ export const eng = {
     contact: {
         title: "Contacts",
         email: "Email",
-        phone: "Phone number"
+        phone: "Phone number",
+        social: "Social media",
     },
     projects: {
         title: "My projects",
