@@ -1,5 +1,5 @@
 import React from "react";
-import myPhoto from "/assets/pedro.png";
+import myPhoto from "/assets/Foto-Pedro.png";
 import RecentProjects from "../Components/RecentProjects";
 import "../Components/Style/About.css";
 import { TextContext } from "../App";
@@ -10,7 +10,7 @@ export default function About() {
   return (
     <main>
       <section className="head-container">
-        <h1 className="page-title">{text.about.title}</h1>
+        <h1 className="about-title">{text.about.title}</h1>
         <img
           className="about-img"
           alt="Pedro's Photo"

@@ -2,13 +2,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    margin: 1em 0;
 }
 
 .about-img {
     align-self: center;
-    width: 30%;
-    border: none;
-    border-radius: 33% 67% 53% 47% / 57% 77% 23% 43% ;
-    box-shadow: 2px 2px 15px #666;
+    width: 20%;
+    border: none ;
+    margin-right: 1em;
+}
+
+.about-title {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 900;
 }
