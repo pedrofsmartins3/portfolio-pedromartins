@@ -1,16 +1,16 @@
-import React from "react"
+import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
-import "../Components/Style/Projects.css"
+import "../Components/Style/Projects.css";
 import { TextContext, LanguageContext } from "../App";
-import { pt, eng } from "../Components/Data/Projects"
+import { pt, eng } from "../Components/Data/Projects";
 
 export default function ProjectsDetail() {
   const params = useParams();
-  const { text } = React.useContext(TextContext)
-  const { language } = React.useContext(LanguageContext)
+  const { text } = React.useContext(TextContext);
+  const { language } = React.useContext(LanguageContext);
 
-  const allProjects = language === "pt" ? pt : eng
+  const allProjects = language === "pt" ? pt : eng;
 
   return (
     <main>
@@ -28,6 +28,29 @@ export default function ProjectsDetail() {
             src={`/assets/${allProjects[params.id - 1].img}`}
           />
 
+          <div className="project-link-div">
+            <div className="project-link-btn btn-left">
+              <a
+                className="project-link"
+                target="_blank"
+                href={allProjects[params.id - 1].repository}
+                rel="noreferrer"
+              >
+                {text.projectsdetail.codebtn}
+              </a>
+            </div>
+            <div className="project-link-btn btn-right">
+              <a
+                className="project-link"
+                target="_blank"
+                href={allProjects[params.id - 1].site}
+                rel="noreferrer"
+              >
+                {text.projectsdetail.sitebtn}
+              </a>
+            </div>
+          </div>
+
           <span className="project-date">
             {allProjects[params.id - 1].date}
           </span>
@@ -35,24 +58,6 @@ export default function ProjectsDetail() {
             {allProjects[params.id - 1].description}
           </p>
         </div>
-        <h3 className="project-subtitle">{text.projectsdetail.question1}</h3>
-        <a
-          className="project-link"
-          target="_blank"
-          href={allProjects[params.id - 1].repository}
-          rel="noreferrer"
-        >
-          {text.projectsdetail.answer1}
-        </a>
-        <h3 className="project-subtitle">{text.projectsdetail.question2}</h3>
-        <a
-          className="project-link"
-          target="_blank"
-          href={allProjects[params.id - 1].site}
-          rel="noreferrer"
-        >
-          {text.projectsdetail.answer2}
-        </a>
       </section>
     </main>
   );

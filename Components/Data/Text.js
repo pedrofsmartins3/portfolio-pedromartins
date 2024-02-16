@@ -37,10 +37,8 @@ export const pt = {
     },
     projectsdetail: {
         backbtn: "Voltar para Projetos!",
-        question1: "Onde posso encontar o código?",
-        answer1: "Clique aqui para ver o código!",
-        question2: "E o site?",
-        answer2: "Clique aqui para ver o site!",
+        sitebtn: "Ver site",
+        codebtn: "Código",
     },
     certifications: {
         title: "Os meus certificados",
@@ -97,10 +95,8 @@ export const eng = {
     },
     projectsdetail: {
         backbtn: "Back to Projects!",
-        question1: "Where can I find the code?",
-        answer1: "Click here to view the code!",
-        question2: "And the website?",
-        answer2: "Click here to view the website!",
+        sitebtn: "Website",
+        codebtn: "Code",
     },
     certifications: {
         title: "My certifications",
