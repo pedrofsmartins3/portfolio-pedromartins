@@ -1,19 +1,4 @@
 .social-icons-div {
     display: flex;
-    gap: 0.4em;
-    padding: 0;
-}
-
-.social-icons-div>a {
-    color: var(--primary-text-color);
-    font-size: 2rem;
-    margin: 0 0.1em;
-}
-
-.linkedin:hover {
-    color: #0072b1;
-}
-
-.github:hover {
-    color: #c9510c;
+    padding: 0.2rem;
 }

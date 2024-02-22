@@ -7,8 +7,14 @@ import HTML from "/assets/HTML.png";
 import CSS from "/assets/CSS.png";
 import JAVASCRIPT from "/assets/JAVASCRIPT.png";
 import TYPESCRIPT from "/assets/TYPESCRIPT.png";
-import REACT from "/assets/REACT.png";
+import REACT from "/assets/reactjs.png";
 import ROUTER from "/assets/ROUTER.png";
+import FIREBASE from "/assets/firebase.png";
+import NEXTJS from "/assets/nextjs.png";
+import SANITY from "/assets/sanity.png";
+import REACTNATIVE from "/assets/reactnative.png";
+import TAILWIND from "/assets/tailwind.jpg";
+import VERCEL from "/assets/vercel.png";
 
 export default function Certifications() {
   const { text } = React.useContext(TextContext);
@@ -28,6 +34,12 @@ export default function Certifications() {
         <img src={TYPESCRIPT} alt="typescript-logo" />
         <img src={REACT} alt="react-logo" />
         <img src={ROUTER} alt="react-router-logo" />
+        <img src={FIREBASE} alt="react-router-logo" />
+        <img src={NEXTJS} alt="react-router-logo" />
+        <img src={SANITY} alt="react-router-logo" />
+        <img src={REACTNATIVE} alt="react-router-logo" />
+        <img src={TAILWIND} alt="react-router-logo" />
+        <img src={VERCEL} alt="VERCEL-router-logo" />
       </div>
       <h2 className="page-title">{text.certifications.title}</h2>
       <section className="certificates-container">

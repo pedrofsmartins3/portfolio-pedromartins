@@ -13,18 +13,24 @@
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 100px);
     gap: 1em;
     margin: 1em 0 2.5em 0;
 }
 
 
 .skills > img {
-    width: 80px;
-    margin: 0 0.25em;
+    height: 100px;
+    width: 100px;
     border: none;
     box-shadow: 3px 3px 5px #666;
-    border-radius:1.2em;
+    object-fit: cover;
+    border-radius: 30%;
+    opacity: 0.6;
+}
+
+.skills > img:hover {
+    opacity: 1;
 }
 
 .certificate-img {
@@ -83,8 +89,10 @@
 
 @media (min-width: 768px) {
 
-    .skills > img {
-        width: 100px;}
+    .skills {
+        grid-template-columns: repeat(4, 100px);
+        gap: 1.6em;
+    }
 
     .certificates-container {
         width: 100%;
@@ -152,12 +160,14 @@
             "Title Title Title Text Text Text Text"
             "Title Title Title Date Date Date Date";
     }
-
-    .skills > img {
-        width: 110px;}
 }
 
 @media (min-width: 1024px) {
+
+    .skills {
+        grid-template-columns: repeat(6, 100px);
+        gap: 2em;
+    }
 
     .certificate-div {
         max-width: 1000px;
@@ -175,12 +185,4 @@
     .certificate-title {
         margin-bottom: 0.5em;
     }
-
-    .skills {
-        display: flex;
-    }
-
-    .skills > img {
-        width: 120px;}
-
 }

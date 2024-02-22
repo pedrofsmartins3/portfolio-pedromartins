@@ -1,8 +1,9 @@
 import React from "react";
-import banner from "/assets/pedro.png";
+import banner from "/assets/fotopedro.jpg";
 import RecentProjects from "../Components/RecentProjects";
 import "../Components/Style/Home.css";
 import { TextContext } from "../App";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const { text } = React.useContext(TextContext);
@@ -10,9 +11,28 @@ export default function Home() {
   return (
     <main>
       <section className="home-header">
-        <h1 className="title">{text.home.title}</h1>
-        <img className="banner" src={banner} alt="code-img" />
-        <p className="title-description">{text.home.titledescription}</p>
+        <motion.div
+          initial={{
+            x: 300,
+            opacity: 0,
+          }}
+          transition={{ duration: 1 }}
+          animate={{ x: 0, opacity: 1 }}
+        >
+          <h1 className="title">{text.home.title}</h1>
+          <p className="title-description">{text.home.titledescription}</p>
+        </motion.div>
+        <motion.img
+          initial={{
+            x: -300,
+            opacity: 0,
+          }}
+          transition={{ duration: 1 }}
+          animate={{ x: 0, opacity: 1 }}
+          className="banner"
+          src={banner}
+          alt="code-img"
+        />
       </section>
       <section className="home-questions">
         <h2 className="homepage-subtitle">{text.home.question1}</h2>
