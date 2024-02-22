@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2em 3em;
-    max-width: 95%;
+    max-width: 90%;
 }
 
 .project-div {
@@ -119,10 +119,6 @@
 }
 
 @media (min-width: 712px) {
-
-    .projects-container {
-        max-width: 1200px;
-    }
 
     .project-container {
         margin: 0 auto;

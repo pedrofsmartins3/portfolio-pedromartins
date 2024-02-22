@@ -54,7 +54,11 @@ header {
 }
 
 .header-link-btn:hover {
-    background-color: #066669;
+    background-color: var(--toggle-btn);
+}
+
+.header-link:hover {
+    color: var(--secondary-text-color);
 }
 
 nav {

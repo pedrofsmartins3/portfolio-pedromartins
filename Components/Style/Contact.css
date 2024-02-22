@@ -1,3 +1,12 @@
+.contacts-container {
+    border: 1px solid rgb(20 108 134 / 0.2);
+    padding: 2em;
+    border-radius: 5em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
 .contact-div {
     display: flex;
     align-items: center;
@@ -6,14 +15,16 @@
     font-weight: bold;
 }
 
-.social-media {
-    margin: 0 auto;
-}
-
 .contact-description {
     text-align: center;
     text-decoration: underline;
     text-decoration-color: rgb(20 108 134 / 0.8);
+}
+
+.social-media {
+    align-self: center;
+    padding: 0;
+    margin: 0;
 }
 
 .contactIcon {

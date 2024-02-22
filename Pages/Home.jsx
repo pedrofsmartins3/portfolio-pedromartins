@@ -13,22 +13,30 @@ export default function Home() {
       <section className="home-header">
         <motion.div
           initial={{
-            x: 300,
+            x: -300,
             opacity: 0,
           }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
           animate={{ x: 0, opacity: 1 }}
         >
           <h1 className="title">{text.home.title}</h1>
+        </motion.div>
+        <motion.div
+          initial={{
+            x: 300,
+            opacity: 0,
+          }}
+          transition={{ duration: 1.5 }}
+          animate={{ x: 0, opacity: 1 }}
+        >
           <p className="title-description">{text.home.titledescription}</p>
         </motion.div>
         <motion.img
           initial={{
-            x: -300,
             opacity: 0,
           }}
-          transition={{ duration: 1 }}
-          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          animate={{ opacity: 1 }}
           className="banner"
           src={banner}
           alt="code-img"

@@ -1,4 +1,3 @@
-import "./Style/SocialIcons.css";
 import { SocialIcon } from "react-social-icons";
 import { ThemeContext } from "../App";
 import React from "react";

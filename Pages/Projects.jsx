@@ -8,16 +8,16 @@ export default function Projects() {
   const { text } = React.useContext(TextContext);
   const { language } = React.useContext(LanguageContext);
 
-  const [visible, setVisible] = React.useState(6);
+  const [visible, setVisible] = React.useState(8);
 
   const allProjects = language === "pt" ? pt : eng;
 
   function show() {
-    setVisible((prev) => (prev === 6 ? allProjects.length : 6));
+    setVisible((prev) => (prev === 8 ? allProjects.length : 8));
   }
 
   const showBtnText =
-    visible === 6
+    visible === 8
       ? `${text.projects.btnShowMore}`
       : `${text.projects.btnShowLess}`;
 
