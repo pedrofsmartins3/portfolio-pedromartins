@@ -16,7 +16,7 @@
 }
 
 [data-theme="light"] {
-  --background-color: #a1b8c3;
+  --background-color: #dbdbdb;
   --foreground-color: #ffffff;
   --primary-text-color: #000;
   --secondary-text-color: #fff;
@@ -62,4 +62,21 @@ section {
   display: flex;
   flex-direction: column;
   max-width: 800px;
+}
+
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(14, 84, 98);
+  border-radius: 0.2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(6, 57, 68)
 }

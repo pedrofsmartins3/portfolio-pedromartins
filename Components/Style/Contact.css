@@ -17,8 +17,8 @@
 
 .contact-description {
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: rgb(20 108 134 / 0.8);
+    text-decoration: underline rgb(20 108 134 / 0.8) 3px;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .social-media {

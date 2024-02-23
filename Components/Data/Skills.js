@@ -8,7 +8,7 @@ export const skillsData = [
     {
         'name': "React Native",
         'url': "/assets/reactnative.png",
-        'progress': 60,
+        'progress': 75,
         'directionLeft': false,
     },
     {
@@ -20,7 +20,7 @@ export const skillsData = [
     {
         'name': "Next.js",
         'url': "/assets/nextjs.png",
-        'progress': 80,
+        'progress': 85,
         'directionLeft': true,
     },   
     {
@@ -38,7 +38,7 @@ export const skillsData = [
     {
         'name': "Tailwind-Css",
         'url': "/assets/tailwind.jpg",
-        'progress': 75,
+        'progress': 90,
         'directionLeft': false,
     },
     {

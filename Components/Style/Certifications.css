@@ -28,7 +28,7 @@
     height: 100px;
     width: 100px;
     border: none;
-    box-shadow: 3px 3px 5px #666;
+    box-shadow: 1px 1px 10px #7a7878;
     object-fit: cover;
     border-radius: 50%;
     transition: ease-in-out;
@@ -63,10 +63,11 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    color: black;
 }
 
 .skill_progress_text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
