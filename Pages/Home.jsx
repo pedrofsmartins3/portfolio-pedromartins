@@ -32,16 +32,16 @@ export default function Home() {
         >
           <p className="title-description">{text.home.titledescription}</p>
         </motion.div>
-        <motion.img
+        <motion.div
           initial={{
-            opacity: 0,
+            x: -100,
           }}
           transition={{ duration: 1.5 }}
-          animate={{ opacity: 1 }}
-          className="banner"
-          src={banner}
-          alt="code-img"
-        />
+          animate={{ x: 0 }}
+          className="banner_div"
+        >
+          <img className="banner" src={banner} alt="code-img" />
+        </motion.div>
       </section>
       <section className="home-questions">
         <h2 className="homepage-subtitle">{text.home.question1}</h2>
