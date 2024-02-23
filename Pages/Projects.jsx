@@ -3,6 +3,7 @@ import CreateProjects from "../Components/CreateProjects";
 import "../Components/Style/Projects.css";
 import { TextContext, LanguageContext } from "../App";
 import { pt, eng } from "../Components/Data/Projects";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const { text } = React.useContext(TextContext);
@@ -25,7 +26,15 @@ export default function Projects() {
 
   return (
     <main>
-      <h2 className="page-title">{text.projects.title}</h2>
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="page-title">{text.projects.title}</h2>
+      </motion.div>
+      <br />
       <section className="projects-container">
         <CreateProjects projects={newArray} />
       </section>

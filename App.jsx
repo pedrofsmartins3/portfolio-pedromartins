@@ -5,11 +5,10 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
 import ProjectsDetail from "./Pages/ProjectsDetail";
-import NotFound from "./Pages/NotFound"
-import Certifications from "./Pages/Certifications"
+import NotFound from "./Pages/NotFound";
+import Certifications from "./Pages/Certifications";
 import React from "react";
-import { eng, pt } from "./Components/Data/Text"
-
+import { eng, pt } from "./Components/Data/Text";
 
 const ThemeContext = React.createContext();
 const LanguageContext = React.createContext();
@@ -19,10 +18,10 @@ export default function App() {
   const localStorageTheme = JSON.parse(localStorage.getItem("theme"));
   const [theme, setTheme] = React.useState(localStorageTheme, false);
 
-  const localStorageLanguage = JSON.parse(localStorage.getItem("language"))
-  const [language, setLanguage] = React.useState(localStorageLanguage, "pt")
+  const localStorageLanguage = JSON.parse(localStorage.getItem("language"));
+  const [language, setLanguage] = React.useState(localStorageLanguage, "pt");
 
-  const text = language === "pt" ? pt : eng
+  const text = language === "pt" ? pt : eng;
 
   return (
     <div data-theme={theme ? "dark" : "light"}>
@@ -49,6 +48,6 @@ export default function App() {
   );
 }
 
-export { ThemeContext }
-export { LanguageContext }
-export { TextContext }
+export { ThemeContext };
+export { LanguageContext };
+export { TextContext };

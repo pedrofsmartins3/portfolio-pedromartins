@@ -17,16 +17,24 @@ export default function Contact() {
   return (
     <main>
       <section>
-        <h1 className="page-title">{text.contact.title}</h1>
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          <h1 className="page-title">{text.contact.title}</h1>
+        </motion.div>
 
         <motion.div
           initial={{
             x: 200,
-            y: 200,
+            y: 50,
             opacity: 0,
           }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
+          viewport={{ once: true }}
           className="contacts-container"
         >
           <div className="contact-div">

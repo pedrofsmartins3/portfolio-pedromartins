@@ -4,6 +4,7 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import "../Components/Style/Projects.css";
 import { TextContext, LanguageContext } from "../App";
 import { pt, eng } from "../Components/Data/Projects";
+import { motion } from "framer-motion";
 
 export default function ProjectsDetail() {
   const params = useParams();
@@ -22,14 +23,27 @@ export default function ProjectsDetail() {
       </Link>
       <section className="project-container">
         <div key={allProjects[params.id - 1].id} className="projectDetail-div">
-          <h2 className="page-title">{allProjects[params.id - 1].title}</h2>
-          <img
-            className="project-img"
-            src={`/assets/${allProjects[params.id - 1].img}`}
-          />
+          <motion.div
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="page-title">{allProjects[params.id - 1].title}</h2>
+            <img
+              className="project-img"
+              src={`/assets/${allProjects[params.id - 1].img}`}
+            />
+          </motion.div>
 
           <div className="project-link-div">
-            <div className="project-link-btn btn-left">
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              transition={{ duration: 1 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              className="project-link-btn btn-left"
+            >
               <a
                 className="project-link"
                 target="_blank"
@@ -38,8 +52,14 @@ export default function ProjectsDetail() {
               >
                 {text.projectsdetail.codebtn}
               </a>
-            </div>
-            <div className="project-link-btn btn-right">
+            </motion.div>
+            <motion.div
+              className="project-link-btn btn-right"
+              initial={{ x: 100, opacity: 0 }}
+              transition={{ duration: 1 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+            >
               <a
                 className="project-link"
                 target="_blank"
@@ -48,15 +68,22 @@ export default function ProjectsDetail() {
               >
                 {text.projectsdetail.sitebtn}
               </a>
-            </div>
+            </motion.div>
           </div>
 
-          <span className="project-date">
-            {allProjects[params.id - 1].date}
-          </span>
-          <p className="project-description">
-            {allProjects[params.id - 1].description}
-          </p>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            transition={{ duration: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <span className="project-date">
+              {allProjects[params.id - 1].date}
+            </span>
+            <p className="project-description">
+              {allProjects[params.id - 1].description}
+            </p>
+          </motion.div>
         </div>
       </section>
     </main>

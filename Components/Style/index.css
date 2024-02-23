@@ -16,16 +16,16 @@
 }
 
 [data-theme="light"] {
-  --background-color: #d8eef8;
+  --background-color: #a1b8c3;
   --foreground-color: #ffffff;
   --primary-text-color: #000;
   --secondary-text-color: #fff;
-  --toggle-btn: rgb(16, 16, 16);
+  --toggle-btn: rgb(1, 31, 37);
 }
 
 [data-theme="dark"] {
   --background-color: #000000;
-  --foreground-color: #1e1e1e;
+  --foreground-color: #0c0c0c;
   --primary-text-color: #fff;
   --secondary-text-color: #000;
   --toggle-btn: #ffffff;

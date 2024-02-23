@@ -18,6 +18,7 @@ export default function Home() {
           }}
           transition={{ duration: 1.5 }}
           animate={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
         >
           <h1 className="title">{text.home.title}</h1>
         </motion.div>
@@ -46,6 +47,7 @@ export default function Home() {
         <h2 className="homepage-subtitle">{text.home.question1}</h2>
         <p className="description">{text.home.answer1}</p>
       </section>
+
       <RecentProjects />
     </main>
   );

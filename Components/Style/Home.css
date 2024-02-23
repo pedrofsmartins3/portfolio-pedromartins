@@ -40,11 +40,10 @@
     font-size: 1.6rem;
     font-weight: 900;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     text-transform: uppercase;
     opacity: 0.8;
     margin: 1em;
-
 }
 
 .page-subtitle {

@@ -1,9 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function CreateProjects({ projects }) {
   const project = projects.map((proj) => (
-    <div key={proj.id} className="project-div">
+    <motion.div
+      initial={{ x: 200, opacity: 0 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      key={proj.id}
+      className="project-div"
+    >
       <Link to={`/projects/${proj.id}`}>
         <img className="project-img" src={`/assets/${proj.img}`} />
         <div className="project-title-div">
@@ -12,7 +20,7 @@ export default function CreateProjects({ projects }) {
         </div>
         <p className="project-description">{proj.minidescription}...</p>
       </Link>
-    </div>
+    </motion.div>
   ));
 
   return project;

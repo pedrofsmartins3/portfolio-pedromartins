@@ -18,19 +18,56 @@
     margin: 1em 0 2.5em 0;
 }
 
+.skill_div {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
 
-.skills > img {
+.skill_img {
     height: 100px;
     width: 100px;
     border: none;
     box-shadow: 3px 3px 5px #666;
     object-fit: cover;
-    border-radius: 30%;
-    opacity: 0.6;
+    border-radius: 50%;
+    transition: ease-in-out;
+    transition-duration: 300;
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.skills > img:hover {
-    opacity: 1;
+.skill_img:hover {
+    opacity: 0.8;
+    filter: grayscale(100%);
+}
+
+.skill_progress_div {
+    position: absolute;
+    opacity: 0;
+    transition: ease-in-out;
+    transition-duration: 300;
+    z-index: 0;
+    border-radius: 9999px;
+    height: 100%;
+    width: 100%;
+}
+
+.skill_progress_div:hover {
+    opacity: .8;
+    --tw-bg-opacity: 5;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.skill_progress_div_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.skill_progress_text {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .certificate-img {
