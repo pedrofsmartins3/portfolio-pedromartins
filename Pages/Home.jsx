@@ -1,37 +1,37 @@
 import React from "react";
-import banner from "/assets/fotopedro.jpg";
+import banner from "/assets/Pedro-banner.jpeg";
 import RecentProjects from "../Components/RecentProjects";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import "../Components/Style/Home.css";
-import { TextContext } from "../App";
+import { LanguageContext, TextContext } from "../App";
 import { motion } from "framer-motion";
 
 export default function Home() {
   const { text } = React.useContext(TextContext);
+  const { language } = React.useContext(LanguageContext);
+
+  const loopText =
+    language === "eng"
+      ? ["Hi, I'm Pedro Martins", "Welcome.js", "<I-Am-Frontend-Developer />"]
+      : [
+          "Olá, sou o Pedro Martins",
+          "BemVindo.js",
+          "<Eu-Sou-Frontend-Developer />",
+        ];
+
+  const [loopTextTitle, count] = useTypewriter({
+    words: loopText,
+    loop: true,
+    delaySpeed: 2000,
+  });
 
   return (
     <main>
       <section className="home-header">
-        <motion.div
-          initial={{
-            x: -300,
-            opacity: 0,
-          }}
-          transition={{ duration: 1.5 }}
-          animate={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-        >
-          <h1 className="title">{text.home.title}</h1>
-        </motion.div>
-        <motion.div
-          initial={{
-            x: 300,
-            opacity: 0,
-          }}
-          transition={{ duration: 1.5 }}
-          animate={{ x: 0, opacity: 1 }}
-        >
-          <p className="title-description">{text.home.titledescription}</p>
-        </motion.div>
+        <h1 className="title">
+          <span>{loopTextTitle}</span>
+          <Cursor cursorColor="#146c86" />
+        </h1>
         <motion.div
           initial={{
             x: -100,

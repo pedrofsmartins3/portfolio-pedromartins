@@ -58,7 +58,7 @@ header {
 }
 
 .header-link:hover {
-    color: var(--secondary-text-color);
+    color: white;
 }
 
 nav {

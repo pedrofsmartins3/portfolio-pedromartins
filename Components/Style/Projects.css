@@ -9,6 +9,12 @@
     margin: 0.5em 0;
     width: 100%;
     margin: auto;
+    scale: 1;
+}
+
+.project-div:hover {
+    scale: 1.05;
+    transition: ease-in-out 0.4s;
 }
 
 .project-div>a {
@@ -22,6 +28,8 @@
     border-radius: 5% 20% 5% 20% / 10% 10% 10% 10% ;
     margin-bottom: 0.4em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-title-div {
@@ -46,12 +54,30 @@
     text-align: justify
 }
 
+.projectDetail-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-img-detail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5% 20% 5% 20% / 10% 10% 10% 10% ;
+    margin-bottom: 0.4em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .project-link-div {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
     margin: 1em 0;
+    
 }
 
 .project-container {
@@ -69,13 +95,15 @@
 }
 
 .project-link-btn:hover {
-    background-color: goldenrod;
+    scale: 1.1;
+    transition: all ease-in-out 400ms;
 }
 
 .project-link {
     text-decoration: none;
     color: var(--secondary-text-color);
     font-weight: 500;
+    color: white;
 }
 
 .project-link:hover {
@@ -133,11 +161,17 @@
         padding: 0.3em 3em;
     }
 
-    .project-div {
-        width: 100%;
-    }
-
     .back-link {
         padding-left: 2em;
+    }
+
+    .project-img-detail {
+        width: 60%;
+        height: 60%;
+    }
+
+    .project-img-detail:hover {
+        scale: 1.02;
+        transition: all ease-in-out 400ms;
     }
 }

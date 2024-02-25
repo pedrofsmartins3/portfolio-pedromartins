@@ -3,7 +3,7 @@
 .banner {
     width: 30%;
     border: none;
-    border-radius: 33% 67% 53% 47% / 57% 77% 23% 43% ;
+    border-radius:69% 31% 72% 28% / 82% 75% 25% 18% ;
     box-shadow: 2px 2px 15px #666;
 }
 
@@ -14,12 +14,9 @@
 .title {
     font-size: 2rem;
     text-align: center;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    opacity: 0.8;
     font-weight: 900;
     line-height: 3rem;
-    margin: 0.2rem;
+    margin: 1.4rem
 }
 
 .title-description {
@@ -68,6 +65,7 @@
     .title {
         line-height: 5rem;
         margin: 1rem;
+        font-size: 2.6rem;
     }
 
     .title-description {
@@ -76,5 +74,11 @@
 
     .banner {
         margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 3rem;
     }
 }

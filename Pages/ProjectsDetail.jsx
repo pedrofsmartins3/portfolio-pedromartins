@@ -31,7 +31,7 @@ export default function ProjectsDetail() {
           >
             <h2 className="page-title">{allProjects[params.id - 1].title}</h2>
             <img
-              className="project-img"
+              className="project-img-detail"
               src={`/assets/${allProjects[params.id - 1].img}`}
             />
           </motion.div>

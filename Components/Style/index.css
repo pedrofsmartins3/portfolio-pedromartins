@@ -20,7 +20,7 @@
   --foreground-color: #ffffff;
   --primary-text-color: #000;
   --secondary-text-color: #fff;
-  --toggle-btn: rgb(1, 31, 37);
+  --toggle-btn: #146c86;
 }
 
 [data-theme="dark"] {
@@ -28,7 +28,7 @@
   --foreground-color: #0c0c0c;
   --primary-text-color: #fff;
   --secondary-text-color: #000;
-  --toggle-btn: #ffffff;
+  --toggle-btn: #146c86;
 }
 
 html,
