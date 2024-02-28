@@ -45,11 +45,6 @@ export default function Header() {
           </Link>
         </button>
         <button className="header-link-btn" onClick={closeNav}>
-          <Link className="header-link" to="about">
-            {text.header.about}
-          </Link>
-        </button>
-        <button className="header-link-btn" onClick={closeNav}>
           <Link className="header-link" to="contact">
             {text.header.contacts}
           </Link>

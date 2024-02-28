@@ -111,7 +111,7 @@ export const pt = [
     },
     {
         "id": 11,
-        "title": "Clone do Netflix",
+        "title": "Netflix Clone",
         "img": "netflixclone.png",
         "date": "24 FEV",
         "minidescription": "O aplicativo Clone da Netflix foi aprimorado com autenticação integrada do Google, proporcionando uma experiência de entrada e saída mais conveniente e segura",
@@ -122,7 +122,7 @@ export const pt = [
     },
     {
         "id": 12,
-        "title": "Clone do Dropbox",
+        "title": "Dropbox Clone",
         "img": "dropboxclone.png",
         "date": "24 FEV",
         "minidescription": "Arraste e solte para armazenar todos os tipos de documentos, com atualizações em tempo real via Firebase. Faça login com a sua conta Google",
@@ -130,7 +130,18 @@ export const pt = [
         "repository": "https://github.com/pedrofsmartins3/dropbox-clone",
         "site": "https://dropbox-clone-nine-coral.vercel.app",
         "language": "Nextjs TypeScript"
-    }
+    },
+    {
+        "id": 13,
+        "title": "Deliveroo Clone",
+        "img": "deliverooApp.png",
+        "gif": "deliverooApp",
+        "date": "24 FEV",
+        "minidescription": "Construída com React-Native e Tailwind CSS, oferece uma experiência de usuário perfeita. O back-end é desenvolvido e atualizado através da Sanity",
+        "description": "A Deliveroo App Clone é um projeto full-stack. Construído com React-Native (Expo) e Tailwind CSS, oferece uma experiência de usuário perfeita. A app esta totalmente preparada para o back-end, desenvolvido pela Sanity.io. A Sanity permite que a equipa que gerencia os restaurantes e pratos faça tudo sem escrever um única linha de código, tratando de toda a informação diretamente no site da sanity, e todas as mudanças são atualizadas no App em tempo real. Esta app tem funcionalidade desde a escolha do restaurante até ao momento em que verá a sua comida a caminho de casa!",
+        "repository": "https://github.com/pedrofsmartins3/food-deliveroo-app-clone",
+        "language": "React-Native Tailwind-CSS Sanity.io"
+    },
     
 ]
 
@@ -266,7 +277,16 @@ export const eng = [
         "repository": "https://github.com/pedrofsmartins3/dropbox-clone",
         "site": "https://dropbox-clone-nine-coral.vercel.app",
         "language": "Nextjs TypeScript"
+    },
+    {
+        "id": 13,
+        "title": "Deliveroo Clone",
+        "img": "deliverooApp.png",
+        "gif": "deliverooApp",
+        "date": "24 FEB",
+        "minidescription": "Built with React-Native (Expo) and Tailwind CSS, it offers a seamless user experience. The backend, is developed and managed with Sanity.io",
+        "description": "The Deliveroo App Clone is a full-stack project. Built with React-Native (Expo) and Tailwind CSS, it offers a seamless user experience. The app is fully integrated with the backend, developed with Sanity.io. Sanity empowers the team managing restaurants and dishes to do everything without writing a single line of code, handling all information directly on the Sanity website, and all changes are updated in the app in real-time. This app has functionality from choosing the restaurant to the moment you see your food on its way home!",
+        "repository": "https://github.com/pedrofsmartins3/food-deliveroo-app-clone",
+        "language": "React-Native Tailwind-CSS Sanity.io"
     }
-
-
 ]
