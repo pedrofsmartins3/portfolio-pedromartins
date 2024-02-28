@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CreateCertificates from "../Components/CreateCertificates";
 import "../Components/Style/Certifications.css";
 import { TextContext, LanguageContext } from "../App";
@@ -13,6 +13,10 @@ export default function Certifications() {
   const data = language === "pt" ? pt : eng;
 
   const newArray = [...data].reverse();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
 
   return (
     <main>

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout";
+import LayoutHome from "./Components/LayoutHome";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
@@ -29,8 +30,10 @@ export default function App() {
           <TextContext.Provider value={{ text }}>
             <BrowserRouter>
               <Routes>
-                <Route element={<Layout />}>
+                <Route element={<LayoutHome />}>
                   <Route index element={<Home />} />
+                </Route>
+                <Route element={<Layout />}>
                   <Route path="*" element={<NotFound />} />
                   <Route path="certifications" element={<Certifications />} />
                   <Route path="contact" element={<Contact />} />

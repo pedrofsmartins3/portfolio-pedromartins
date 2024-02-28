@@ -1,71 +1,75 @@
-import React from "react";
-import RecentProjects from "../Components/RecentProjects";
+import React, { useEffect } from "react";
 import "../Components/Style/Contact.css";
 import { TextContext } from "../App";
-import {
-  PhoneIcon,
-  MapPinIcon,
-  EnvelopeIcon,
-  UserCircleIcon,
-} from "@heroicons/react/24/solid";
-import SocialIcons from "../Components/SocialIcons";
 import { motion } from "framer-motion";
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
+import RecentProjects from "../Components/RecentProjects";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
   const { text } = React.useContext(TextContext);
 
+  const notify = () => {
+    toast.loading("Loading the page...");
+  };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
+
   return (
     <main>
-      <section>
-        <motion.div
-          initial={{ opacity: 0 }}
-          transition={{ duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+      <section className="about-page">
+        <h2 className="page-title">{text.contact.sendEmail}</h2>
+        <p className="contact-div">
+          <EnvelopeIcon className="contactIcon" />
+          pedrofsmartins3@gmail.com
+        </p>
+
+        <form
+          method="POST"
+          action="https://getform.io/f/xe7j1Bd7"
+          className="contact-form"
         >
-          <h1 className="page-title">{text.contact.title}</h1>
-        </motion.div>
+          <div>
+            <input
+              placeholder="Name"
+              className="contactInput"
+              type="text"
+              name="name"
+            />
+            <input
+              placeholder="Email"
+              className="contactInput"
+              type="email"
+              name="email"
+            />
+          </div>
+          <input
+            placeholder="Subject"
+            className="contactInput"
+            type="text"
+            name="message"
+          />
+
+          <textarea placeholder="Messge" className="contactInput" />
+
+          <button onClick={notify} type="submit">
+            Submit
+          </button>
+          <Toaster />
+        </form>
 
         <motion.div
-          initial={{
-            x: 200,
-            y: 50,
-            opacity: 0,
-          }}
+          initial={{ x: 100, opacity: 0 }}
           transition={{ duration: 1 }}
-          animate={{ x: 0, y: 0, opacity: 1 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="contacts-container"
         >
-          <div className="contact-div">
-            <EnvelopeIcon className="contactIcon" />
-            {text.contact.email}
-          </div>
-          <p className="contact-description">pedrofsmartins3@gmail.com</p>
-
-          <div className="contact-div">
-            <PhoneIcon className="contactIcon" />
-            {text.contact.phone}
-          </div>
-          <p className="contact-description">+351 930593707</p>
-
-          <div className="contact-div">
-            <MapPinIcon className="contactIcon" />
-            {text.contact.address}
-          </div>
-          <p className="contact-description">Porto, Portugal</p>
-
-          <div className="contact-div">
-            <UserCircleIcon className="contactIcon" />
-            {text.contact.social}
-          </div>
-
-          <p className="social-media">
-            <SocialIcons />
-          </p>
+          <h2 className="recentprojects-title">{text.recentprojects.title}</h2>
         </motion.div>
+        <RecentProjects />
       </section>
-      <RecentProjects />
     </main>
   );
 }

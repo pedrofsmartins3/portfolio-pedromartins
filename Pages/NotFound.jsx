@@ -8,7 +8,7 @@ export default function Contact() {
   const { text } = React.useContext(TextContext);
 
   return (
-    <main>
+    <main id="notfound">
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 1.5 }}

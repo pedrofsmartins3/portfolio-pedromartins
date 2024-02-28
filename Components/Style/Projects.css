@@ -1,6 +1,4 @@
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2em 3em;
     max-width: 90%;
 }
@@ -15,27 +13,6 @@
 .project-div:hover {
     scale: 1.05;
     transition: ease-in-out 0.4s;
-}
-
-.project-div>a {
-    text-decoration: none;
-}
-
-.project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10% 20% 10% 10% / 20% 10% 20% 20% ;
-    margin-bottom: 0.4em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.project-title-div {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
 }
 
 .project-date,
@@ -68,7 +45,7 @@
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 0.4em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .project-link-div {

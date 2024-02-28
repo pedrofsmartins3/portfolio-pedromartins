@@ -16,15 +16,7 @@ export default function RecentProjects() {
 
   return (
     <>
-      <motion.div
-        initial={{ x: 100, opacity: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-      >
-        <h2 className="recentprojects-title">{text.recentprojects.title}</h2>
-      </motion.div>
-      <section className="projects-container">
+      <section className="topProjects_container">
         <CreateProjects projects={newArray} />
       </section>
     </>

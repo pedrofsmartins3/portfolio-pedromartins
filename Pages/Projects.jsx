@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CreateProjects from "../Components/CreateProjects";
 import "../Components/Style/Projects.css";
 import { TextContext, LanguageContext } from "../App";
@@ -23,6 +23,10 @@ export default function Projects() {
       : `${text.projects.btnShowLess}`;
 
   const newArray = [...allProjects].reverse().slice(0, visible);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
 
   return (
     <main>

@@ -1,3 +1,16 @@
+#home {
+    scroll-snap-type: y mandatory;
+    position: relative;
+}
+  
+#hero {
+    scroll-snap-align: start;
+}
+  
+#projects, #contact, #certifications {
+    scroll-snap-align: center;
+}
+
 .home_header {
     display: flex;
     flex-direction: column;
@@ -53,6 +66,11 @@
     margin: 0.6rem 0;
 }
 
+#projects {
+    align-items: center;
+    margin: 1rem 0;
+}
+
 .topProjects_title {
     font-size: 1.6rem;
     font-weight: 900;
@@ -64,12 +82,12 @@
 }
 
 .topProjects_container {
-    margin: 1rem auto;
     max-width: 550px;
+    margin-bottom: 2rem;
 }
 
 .topProjects_div {
-    margin: 1rem auto;
+    margin: 0.6rem auto;
     width: 100%;
     text-align: center;
 }
@@ -79,7 +97,7 @@
 }
 
 .topProjects_div:hover {
-    scale: 1.05;
+    scale: 1.02;
     transition: ease-in-out 0.4s;
 }
 
@@ -87,16 +105,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5% 20% 5% 20% / 10% 10% 10% 10% ;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10% 20% 10% 10% / 20% 10% 20% 20% ;
+
 }
 
 .topProjects_title-div {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    
 }
 
 .topProjects_date,
@@ -115,6 +134,52 @@
     text-align: justify
 }
 
+#certifications {
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.home-btn {
+    background-color: var(--toggle-btn);
+    color: #fff;
+    padding: 0.4rem 2rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-btn:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+#contact {
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-top {
+    width: 3rem;
+    top: 3rem;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+    position: sticky;
+    bottom: 1%;
+    opacity: 0.4;
+}
+
+.btn-top:hover {
+    scale: 1.2;
+    opacity: 1;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
 
     .topProjects_container {
@@ -129,6 +194,7 @@
         width: 650px;
         display: flex;
         gap: 2rem;
+        align-items: center;
     }
 
     .topProjects_img {

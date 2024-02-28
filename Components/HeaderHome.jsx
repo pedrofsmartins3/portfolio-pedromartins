@@ -35,19 +35,19 @@ export default function Header() {
       </div>
       <nav className="mainMenu" style={navStyle}>
         <button className="header-link-btn" onClick={closeNav}>
-          <Link className="header-link" to="/">
+          <a className="header-link" href="/#projects">
             {text.header.projects}
-          </Link>
+          </a>
         </button>
         <button className="header-link-btn" onClick={closeNav}>
-          <Link className="header-link" to="/">
+          <a className="header-link" href="#certifications">
             {text.header.certifications}
-          </Link>
+          </a>
         </button>
         <button className="header-link-btn" onClick={closeNav}>
-          <Link className="header-link" to="/">
+          <a className="header-link" href="#contact">
             {text.header.contacts}
-          </Link>
+          </a>
         </button>
         <Toggle />
         <ToggleLanguage />

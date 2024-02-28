@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import "../Components/Style/Projects.css";
@@ -15,6 +15,10 @@ export default function ProjectsDetail() {
   const [showGif, setShowGif] = useState(false);
 
   const allProjects = language === "pt" ? pt : eng;
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
 
   return (
     <main>
@@ -37,7 +41,7 @@ export default function ProjectsDetail() {
             <h2 className="page-title">{allProjects[params.id - 1].title}</h2>
             <img
               className="project-img-detail"
-              src={`/assets/${allProjects[params.id - 1].img}`}
+              src={`/assets/projects/${allProjects[params.id - 1].img}`}
             />
           </motion.div>
 
