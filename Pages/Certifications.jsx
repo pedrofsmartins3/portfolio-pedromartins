@@ -5,6 +5,7 @@ import { TextContext, LanguageContext } from "../App";
 import { pt, eng } from "../Components/Data/Certificates";
 import { skillsData } from "../Components/Data/Skills";
 import { motion } from "framer-motion";
+import BackHomePageBtn from "../Components/BackHomePageBtn";
 
 export default function Certifications() {
   const { text } = React.useContext(TextContext);
@@ -52,6 +53,7 @@ export default function Certifications() {
         <CreateCertificates certifications={newArray} />
       </section>
       <br></br>
+      <BackHomePageBtn />
     </main>
   );
 }

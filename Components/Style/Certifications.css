@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: repeat(3, 100px);
     gap: 1em;
-    margin: 1em 0 2.5em 0;
+    margin: 1rem 0 3rem 0;
 }
 
 .skill_div {

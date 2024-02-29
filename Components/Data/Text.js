@@ -1,5 +1,6 @@
 export const pt = {
     name: "pt",
+    homeBtn: "Voltar página inical!",
     header: {
         title: "Portfólio",
         projects: "Projetos",
@@ -48,12 +49,13 @@ export const pt = {
     },
     footer: {
         title: "Portfólio - Pedro Martins"
-    }
+    },
 
 };
 
 export const eng = {
     name: "eng",
+    homeBtn: "Back home page!",
     header: {
         title: "Portfolio",
         projects: "Projects",

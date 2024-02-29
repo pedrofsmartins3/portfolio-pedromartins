@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import RecentProjects from "../Components/RecentProjects";
 import toast, { Toaster } from "react-hot-toast";
+import BackHomePageBtn from "../Components/BackHomePageBtn";
 
 export default function Contact() {
   const { text } = React.useContext(TextContext);
@@ -26,39 +27,46 @@ export default function Contact() {
           pedrofsmartins3@gmail.com
         </p>
 
-        <form
-          method="POST"
-          action="https://getform.io/f/xe7j1Bd7"
-          className="contact-form"
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 2 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
         >
-          <div>
+          <form
+            method="POST"
+            action="https://getform.io/f/xe7j1Bd7"
+            className="contact-form"
+          >
+            <div>
+              <input
+                placeholder="Name"
+                className="contactInput"
+                type="text"
+                name="name"
+              />
+              <input
+                placeholder="Email"
+                className="contactInput"
+                type="email"
+                name="email"
+              />
+            </div>
             <input
-              placeholder="Name"
+              placeholder="Subject"
               className="contactInput"
               type="text"
-              name="name"
+              name="message"
             />
-            <input
-              placeholder="Email"
-              className="contactInput"
-              type="email"
-              name="email"
-            />
-          </div>
-          <input
-            placeholder="Subject"
-            className="contactInput"
-            type="text"
-            name="message"
-          />
 
-          <textarea placeholder="Messge" className="contactInput" />
+            <textarea placeholder="Messge" className="contactInput" />
 
-          <button onClick={notify} type="submit">
-            Submit
-          </button>
-          <Toaster />
-        </form>
+            <button onClick={notify} type="submit">
+              Submit
+            </button>
+            <Toaster />
+          </form>
+        </motion.div>
 
         <motion.div
           initial={{ x: 100, opacity: 0 }}
@@ -70,6 +78,7 @@ export default function Contact() {
         </motion.div>
         <RecentProjects />
       </section>
+      <BackHomePageBtn />
     </main>
   );
 }
