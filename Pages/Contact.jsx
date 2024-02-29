@@ -11,7 +11,9 @@ export default function Contact() {
   const { text } = React.useContext(TextContext);
 
   const notify = () => {
-    toast.loading("Loading the page...");
+    toast.loading("Sending message...", {
+      duration: 2000,
+    });
   };
 
   useEffect(() => {
