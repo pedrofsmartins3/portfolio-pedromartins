@@ -54,6 +54,10 @@
     gap: 0.4rem;
     width: 90%;
     margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid rgb(20 108 134 / 0.2);
+    border-radius: 10px;
+    box-shadow: rgba(62, 62, 62, 0.35) 1px 1px 10px;
 }
 
 .contact-form>div {
@@ -62,8 +66,8 @@
 }
 
 .contact-form>div>input, .contact-form>input, .contact-form>textarea {
-    background-color: #2b2b2b;
-    color: white;
+    background-color: var(--background-forms);
+    color: var(--primary-text-color);
     border: none;
     padding: 1rem;
     outline: none;
@@ -73,8 +77,12 @@
 }
 
 .contact-form>div>input::placeholder, .contact-form>input::placeholder, .contact-form>textarea::placeholder {
-    color: #adadad;
+    color: var(--primary-text-color);
 }   
+
+.contact-form>div>input:focus, .contact-form>input:focus, .contact-form>textarea:focus {
+    box-shadow: rgba(0, 0, 0, 0.35) 1px 1px 10px;
+}
 
 .contact-form>button {
     background-color: var(--toggle-btn);

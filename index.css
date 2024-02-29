@@ -21,6 +21,7 @@
   --primary-text-color: #000;
   --secondary-text-color: #fff;
   --toggle-btn: #146c86;
+  --background-forms: #b1b1b1;
 }
 
 [data-theme="dark"] {
@@ -29,6 +30,7 @@
   --primary-text-color: #fff;
   --secondary-text-color: #000;
   --toggle-btn: #146c86;
+  --background-forms: #2b2b2b;
 }
 
 html,
