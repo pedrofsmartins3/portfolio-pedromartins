@@ -16,7 +16,10 @@ export default function CreateCertificates({ certifications }) {
       key={proj.id}
       className="certificate-div"
     >
-      <img className="certificate-img" src={`/assets/${proj.img}`} />
+      <img
+        className="certificate-img"
+        src={`/assets/certificates/${proj.img}`}
+      />
       <h2 className="certificate-title">{proj.title}</h2>
       <span className="certificate-date">
         {text.createcertificate.datetext}: {proj.date}

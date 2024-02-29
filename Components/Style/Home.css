@@ -1,16 +1,3 @@
-#home {
-    scroll-snap-type: y mandatory;
-    position: relative;
-}
-  
-#hero {
-    scroll-snap-align: start;
-}
-  
-#projects, #contact, #certifications {
-    scroll-snap-align: center;
-}
-
 .home_header {
     display: flex;
     flex-direction: column;

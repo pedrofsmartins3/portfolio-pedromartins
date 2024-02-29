@@ -36,6 +36,11 @@ export default function Header() {
       <nav className="mainMenu" style={navStyle}>
         <button className="header-link-btn" onClick={closeNav}>
           <Link className="header-link" to="/">
+            {text.header.home}
+          </Link>
+        </button>
+        <button className="header-link-btn" onClick={closeNav}>
+          <Link className="header-link" to="/">
             {text.header.projects}
           </Link>
         </button>

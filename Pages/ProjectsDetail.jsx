@@ -118,7 +118,7 @@ export default function ProjectsDetail() {
               viewport={{ once: true }}
             >
               <img
-                src={`/assets/${allProjects[params.id - 1].gif}-${theme ? "black" : "white"}.gif`}
+                src={`/assets/projects/${allProjects[params.id - 1].gif}-${theme ? "black" : "white"}.gif`}
                 alt={`${allProjects[params.id - 1].name} gif`}
                 className="project-gif"
               />

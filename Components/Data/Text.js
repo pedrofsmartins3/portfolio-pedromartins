@@ -3,6 +3,7 @@ export const pt = {
     homeBtn: "Voltar página inical!",
     header: {
         title: "Portfólio",
+        home: "Início",
         projects: "Projetos",
         certifications: "Certificados",
         contacts: "Contactos"
@@ -58,6 +59,7 @@ export const eng = {
     homeBtn: "Back home page!",
     header: {
         title: "Portfolio",
+        home: "Home",
         projects: "Projects",
         certifications: "Certifications",
         contacts: "Contacts"
