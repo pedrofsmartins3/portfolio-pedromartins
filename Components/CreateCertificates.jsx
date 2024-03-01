@@ -1,12 +1,10 @@
 import React from "react";
 import "../Components/Style/Certifications.css";
-import { TextContext, LanguageContext } from "../App";
+import { TextContext } from "../App";
 import { motion } from "framer-motion";
 
 export default function CreateCertificates({ certifications }) {
   const { text } = React.useContext(TextContext);
-  const { language } = React.useContext(LanguageContext);
-
   const certificate = certifications.map((proj, index) => (
     <motion.div
       initial={{ y: 100, opacity: 0 }}

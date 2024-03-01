@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "/assets/Foto-Pedro.png";
-import { FaBars } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
 import Toggle from "./Toggle/Toggle";
 import ToggleLanguage from "./Toggle/ToggleLanguage";
 import "./Style/Header.css";

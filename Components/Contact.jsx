@@ -3,7 +3,6 @@ import "../Components/Style/Contact.css";
 import { TextContext } from "../App";
 import { motion } from "framer-motion";
 import {
-  EnvelopeIcon,
   EnvelopeOpenIcon,
   MapPinIcon,
   PhoneIcon,

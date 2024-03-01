@@ -5,7 +5,6 @@ import { TextContext, LanguageContext } from "../App";
 import { pt, eng } from "./Data/Certificates";
 import { skillsData } from "./Data/Skills";
 import { motion } from "framer-motion";
-import BackHomePageBtn from "./BackHomePageBtn";
 
 export default function Certifications() {
   const { text } = React.useContext(TextContext);

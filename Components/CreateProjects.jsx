@@ -1,11 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ThemeContext } from "../App";
 
 export default function CreateProjects({ projects }) {
-  const { theme } = useContext(ThemeContext);
-
   const project = projects.map((proj, index) => (
     <motion.div
       initial={{ opacity: 0.8, y: 100 }}

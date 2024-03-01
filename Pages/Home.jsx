@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import banner from "/assets/Pedro-banner.jpeg";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import "../Components/Style/Home.css";
-import { LanguageContext, TextContext, ThemeContext } from "../App";
+import { LanguageContext, TextContext } from "../App";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowUpCircleIcon } from "@heroicons/react/24/solid";
@@ -13,7 +13,6 @@ import Contact from "../Components/Contact";
 export default function Home() {
   const { text } = React.useContext(TextContext);
   const { language } = React.useContext(LanguageContext);
-  const { theme } = React.useContext(ThemeContext);
 
   const loopText =
     language === "pt"
@@ -29,10 +28,6 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0 });
   }, []);
-
-  {
-    /* TODO: Clean up CSS code */
-  }
 
   return (
     <main id="home">
