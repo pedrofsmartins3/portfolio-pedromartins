@@ -30,6 +30,10 @@ export default function Home() {
     window.scrollTo({ top: 0, left: 0 });
   }, []);
 
+  {
+    /* TODO: Clean up CSS code */
+  }
+
   return (
     <main id="home">
       <section className="home_header" id="hero">
