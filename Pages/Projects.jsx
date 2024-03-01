@@ -4,7 +4,8 @@ import "../Components/Style/Projects.css";
 import { TextContext, LanguageContext } from "../App";
 import { pt, eng } from "../Components/Data/Projects";
 import { motion } from "framer-motion";
-import BackHomePageBtn from "../Components/BackHomePageBtn";
+import { Link } from "react-router-dom";
+import { HomeIcon } from "@heroicons/react/24/solid";
 
 export default function Projects() {
   const { text } = React.useContext(TextContext);
@@ -53,7 +54,10 @@ export default function Projects() {
           {showBtnText}
         </button>
       </motion.div>
-      <BackHomePageBtn />
+
+      <Link to="/" className="btn-back-home">
+        <HomeIcon color="#fff" />
+      </Link>
     </main>
   );
 }

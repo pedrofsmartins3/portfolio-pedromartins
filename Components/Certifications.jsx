@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import CreateCertificates from "../Components/CreateCertificates";
+import React, { useEffect, useState } from "react";
+import CreateCertificates from "./CreateCertificates";
 import "../Components/Style/Certifications.css";
 import { TextContext, LanguageContext } from "../App";
-import { pt, eng } from "../Components/Data/Certificates";
-import { skillsData } from "../Components/Data/Skills";
+import { pt, eng } from "./Data/Certificates";
+import { skillsData } from "./Data/Skills";
 import { motion } from "framer-motion";
-import BackHomePageBtn from "../Components/BackHomePageBtn";
+import BackHomePageBtn from "./BackHomePageBtn";
 
 export default function Certifications() {
   const { text } = React.useContext(TextContext);
@@ -18,6 +18,8 @@ export default function Certifications() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0 });
   }, []);
+
+  const [showCertificates, setShowCertificates] = useState(false);
 
   return (
     <main>
@@ -48,12 +50,35 @@ export default function Certifications() {
           </motion.div>
         ))}
       </div>
-      <h2 className="page-title">{text.certifications.title}</h2>
-      <section className="certificates-container">
-        <CreateCertificates certifications={newArray} />
-      </section>
-      <br></br>
-      <BackHomePageBtn />
+
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 100,
+        }}
+        transition={{ duration: 1 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+        }}
+        viewport={{ once: true }}
+      >
+        <button
+          onClick={() => setShowCertificates(!showCertificates)}
+          className="home-btn"
+        >
+          {text.certifications.btn}
+        </button>
+      </motion.div>
+
+      {showCertificates && (
+        <div className="show-certificates">
+          <h2 className="page-title">{text.certifications.title}</h2>
+          <section className="certificates-container">
+            <CreateCertificates certifications={newArray} />
+          </section>
+        </div>
+      )}
     </main>
   );
 }

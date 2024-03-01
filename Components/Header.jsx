@@ -30,36 +30,10 @@ export default function Header() {
           </div>
         </Link>
       </div>
-      <div className="navBtn open" onClick={openNav}>
-        <FaBars />
-      </div>
-      <nav className="mainMenu" style={navStyle}>
-        <button className="header-link-btn" onClick={closeNav}>
-          <Link className="header-link" to="/">
-            {text.header.home}
-          </Link>
-        </button>
-        <button className="header-link-btn" onClick={closeNav}>
-          <Link className="header-link" to="/">
-            {text.header.projects}
-          </Link>
-        </button>
-        <button className="header-link-btn" onClick={closeNav}>
-          <Link className="header-link" to="/">
-            {text.header.certifications}
-          </Link>
-        </button>
-        <button className="header-link-btn" onClick={closeNav}>
-          <Link className="header-link" to="/">
-            {text.header.contacts}
-          </Link>
-        </button>
+      <div style={{ margin: 10 }}>
         <Toggle />
-        <ToggleLanguage />
-        <div className="navBtn close" onClick={closeNav}>
-          <FaTimes />
-        </div>
-      </nav>
+      </div>
+      <ToggleLanguage />
     </header>
   );
 }

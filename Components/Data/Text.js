@@ -17,7 +17,7 @@ export const pt = {
         btn: "Entrar em contacto",
         title: "Contactos",
         email: "Email",
-        sendEmail: "Entre em contacto!",
+        sendEmail: "Envia-me um email!",
         phone: "Número de telefone",
         social: "Redes sociais",
         address: "Endereço"
@@ -39,7 +39,7 @@ export const pt = {
     certifications: {
         title: "Os meus certificados",
         skills: "Habilidades",
-        btn: "Todos os certificados"
+        btn: "Vê os certificados"
     },
     createcertificate: {
         datetext: "Data de finalização"
@@ -73,7 +73,7 @@ export const eng = {
         btn: "Contact me",
         title: "Contacts",
         email: "Email",
-        sendEmail: "Contact me!",
+        sendEmail: "Send me an email!",
         phone: "Phone number",
         social: "Social media",
         address: "Address"
@@ -95,7 +95,7 @@ export const eng = {
     certifications: {
         title: "My certifications",
         skills: "Skills",
-        btn: "All certifications"
+        btn: "See my certifications"
     },
     createcertificate: {
         datetext: "Finalization date"

@@ -7,14 +7,14 @@ export default function CreateCertificates({ certifications }) {
   const { text } = React.useContext(TextContext);
   const { language } = React.useContext(LanguageContext);
 
-  const certificate = certifications.map((proj) => (
+  const certificate = certifications.map((proj, index) => (
     <motion.div
-      initial={{ x: -200, opacity: 0 }}
+      initial={{ y: 100, opacity: 0 }}
       transition={{ duration: 1 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       key={proj.id}
-      className="certificate-div"
+      className={`certificate-div ${index % 2 !== 0 ? "reverse" : "normal"}`}
     >
       <img
         className="certificate-img"

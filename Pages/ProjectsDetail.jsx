@@ -5,6 +5,7 @@ import "../Components/Style/Projects.css";
 import { TextContext, LanguageContext, ThemeContext } from "../App";
 import { pt, eng } from "../Components/Data/Projects";
 import { motion } from "framer-motion";
+import { ArrowLeftCircleIcon } from "@heroicons/react/24/solid";
 
 export default function ProjectsDetail() {
   const params = useParams();
@@ -141,6 +142,20 @@ export default function ProjectsDetail() {
             </p>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          <Link to=".." relative="path" className="back-btn-bottom">
+            <span>
+              <FaArrowCircleLeft />
+            </span>
+            <p>{text.projectsdetail.backbtn}</p>
+          </Link>
+        </motion.div>
       </section>
     </main>
   );

@@ -2,6 +2,14 @@
     display: flex;
     gap: 2em;
     max-width: 90%;
+    margin: 0 auto;
+}
+
+.show-certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .certificate-div {
@@ -120,7 +128,6 @@
     }
 
     .certificate-div {
-        max-width: 1400px;
         width: 100%;
         display: grid;
         margin: auto;
@@ -129,11 +136,22 @@
         margin-bottom: 0.5em;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: auto auto auto auto;
+    }
+
+    .normal {
         grid-template-areas:
             "Img Img Img Text Text Text Text"
             "Img Img Img Text Text Text Text"
             "Title Title Title Text Text Text Text"
             "Date Date Date Text Text Text Text";
+    }
+
+    .reverse {
+        grid-template-areas:
+        "Text Text Text Text Img Img Img"
+        "Text Text Text Text Img Img Img"
+        "Text Text Text Text Title Title Title"
+        "Text Text Text Text Date Date Date";
     }
 
     .certificate-description {
@@ -169,17 +187,28 @@
 @media (min-width: 880px) {
 
     .certificate-div {
-        max-width: 1000px;
         width: 100%;
         display: grid;
         grid-gap: 0 2em;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: auto auto auto auto;
+        
+    }
+
+    .normal {
         grid-template-areas:
             "Img Img Img Text Text Text Text"
             "Img Img Img Text Text Text Text"
             "Title Title Title Text Text Text Text"
             "Title Title Title Date Date Date Date";
+    }
+
+    .reverse {
+        grid-template-areas:
+            " Text Text Text Text Img Img Img"
+            " Text Text Text Text Img Img Img"
+            " Text Text Text Text Title Title Title"
+            " Date Date Date Date Title Title Title";
     }
 }
 
@@ -190,17 +219,31 @@
         gap: 2em;
     }
 
+    .show-certificates {
+        min-width: 1000px;
+    }
+
     .certificate-div {
-        max-width: 1000px;
         width: 100%;
         display: grid;
         grid-gap: 0 2em;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: auto auto auto;
+        align-items: baseline;
+    }
+
+    .normal {
         grid-template-areas:
-            "Img Img Img Title Title Title Title"
-            "Img Img Img Text Text Text Text"
-            "Img Img Img Date Date Date Date";
+        "Img Img Img Title Title Date Date"
+        "Img Img Img Text Text Text Text"
+        "Img Img Img Text Text Text Text";
+    }
+
+    .reverse {
+        grid-template-areas:
+        " Title Title Date Date Img Img Img"
+        " Text Text Text Text Img Img Img"
+        " Text Text Text Text  Img Img Img";
     }
 
     .certificate-title {

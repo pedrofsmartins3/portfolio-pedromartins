@@ -6,16 +6,19 @@ import { ThemeContext } from "../App";
 export default function CreateProjects({ projects }) {
   const { theme } = useContext(ThemeContext);
 
-  const project = projects.map((proj) => (
+  const project = projects.map((proj, index) => (
     <motion.div
-      initial={{ opacity: 0.8, x: 25 }}
+      initial={{ opacity: 0.8, y: 100 }}
       transition={{ duration: 1.5 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       key={proj.id}
       className="topProjects_div"
     >
-      <Link to={`/projects/${proj.id}`}>
+      <Link
+        to={`/projects/${proj.id}`}
+        className={index % 2 !== 0 ? "row-reverse" : ""}
+      >
         <img className="topProjects_img" src={`/assets/projects/${proj.img}`} />
         <div className="topProjects_divDetails">
           <div className="topProjects_title-div">

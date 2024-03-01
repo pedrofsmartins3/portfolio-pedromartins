@@ -1,7 +1,7 @@
 export const pt = [
     {
         "id": 1,
-        "title": "Responsive Web Design",
+        "title": "Responsive Design",
         "img": "freecodecampwebdesign.png",
         "date": "NOV 23",
         "description": "Neste curso, explorei o Responsive Web Design, integrando HTML e CSS. Compreendi a importância de criar aplicações e sites responsivos para garantir uma experiência otimizada em todos os tamanhos de ecrãs. Este conhecimento aprimorado proporcionou-me habilidades cruciais para desenvolver interfaces consistentes e atrativas, promovendo acessibilidade e usabilidade notáveis.",
@@ -28,7 +28,7 @@ export const pt = [
 export const eng = [
     {
         "id": 1,
-        "title": "Responsive Web Design",
+        "title": "Responsive Design",
         "img": "freecodecampwebdesign.png",
         "date": "NOV 23",
         "description": "In this course, I explored Responsive Web Design, integrating HTML and CSS. I understood the importance of creating responsive applications and websites to ensure an optimized experience on all screen sizes. This enhanced knowledge provided me with crucial skills to develop consistent and engaging interfaces, promoting notable accessibility and usability.",
