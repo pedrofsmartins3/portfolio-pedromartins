@@ -2,7 +2,7 @@ export const skillsData = [
     {
         'name': "React.js",
         'url': "assets/skills/reactjs.png",
-        'progress': 90,
+        'progress': 95,
         'directionLeft': false,
     },
     {
@@ -14,7 +14,7 @@ export const skillsData = [
     {
         'name': "React Router",
         'url': "assets/skills/ROUTER.png",
-        'progress': 90,
+        'progress': 95,
         'directionLeft': false,
     },
     {
@@ -42,34 +42,34 @@ export const skillsData = [
         'directionLeft': false,
     },
     {
+        'name': "Styled-Components",
+        'url': "assets/skills/styled.png",
+        'progress': 90,
+        'directionLeft': false,
+    },
+    {
         'name': "CSS",
         'url': "assets/skills/CSS.png",
-        'progress': 85,
+        'progress': 90,
         'directionLeft': false,
     },
     {
         'name': "HTML",
         'url': "assets/skills/HTML.png",
         'progress': 100,
-        'directionLeft': false,
+        'directionLeft': true,
     },
     {
         'name': "Firebase",
         'url': "assets/skills/firebase.png",
-        'progress': 60,
+        'progress': 70,
         'directionLeft': true,
     },
     {
         'name': "Sanity.io",
         'url': "assets/skills/sanity.png",
-        'progress': 60,
+        'progress': 70,
         'directionLeft': true,
-    },
-    {
-        'name': "VERCEL",
-        'url': "assets/skills/vercel.png",
-        'progress': 85,
-        'directionLeft': true,
-    },
+    }, 
    
 ]
