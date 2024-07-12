@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "/assets/Foto-Pedro.png";
 import Toggle from "./Toggle/Toggle";
@@ -7,16 +7,7 @@ import "./Style/Header.css";
 import { TextContext } from "../App";
 
 export default function Header() {
-  const [navStyle, setNavStyle] = React.useState({});
-  const { text } = React.useContext(TextContext);
-
-  function openNav() {
-    setNavStyle({ display: "flex", top: "0" });
-  }
-
-  function closeNav() {
-    setNavStyle({ top: "100%" });
-  }
+  const { text } = useContext(TextContext);
 
   return (
     <header>

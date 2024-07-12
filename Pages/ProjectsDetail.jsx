@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import "../Components/Style/Projects.css";
@@ -9,9 +9,9 @@ import { ArrowLeftCircleIcon } from "@heroicons/react/24/solid";
 
 export default function ProjectsDetail() {
   const params = useParams();
-  const { text } = React.useContext(TextContext);
-  const { language } = React.useContext(LanguageContext);
-  const { theme } = React.useContext(ThemeContext);
+  const { text } = useContext(TextContext);
+  const { language } = useContext(LanguageContext);
+  const { theme } = useContext(ThemeContext);
 
   const [showGif, setShowGif] = useState(false);
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "/assets/Foto-Pedro.png";
 import { FaBars } from "react-icons/fa";
@@ -9,8 +9,8 @@ import "./Style/Header.css";
 import { TextContext } from "../App";
 
 export default function Header() {
-  const [navStyle, setNavStyle] = React.useState({});
-  const { text } = React.useContext(TextContext);
+  const [navStyle, setNavStyle] = useState({});
+  const { text } = useContext(TextContext);
 
   function openNav() {
     setNavStyle({ display: "flex", top: "0" });

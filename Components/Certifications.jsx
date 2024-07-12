@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import CreateCertificates from "./CreateCertificates";
 import "../Components/Style/Certifications.css";
 import { TextContext, LanguageContext } from "../App";
@@ -7,8 +7,8 @@ import { skillsData } from "./Data/Skills";
 import { motion } from "framer-motion";
 
 export default function Certifications() {
-  const { text } = React.useContext(TextContext);
-  const { language } = React.useContext(LanguageContext);
+  const { text } = useContext(TextContext);
+  const { language } = useContext(LanguageContext);
 
   const data = language === "pt" ? pt : eng;
 

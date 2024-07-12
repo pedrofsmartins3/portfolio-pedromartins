@@ -11,7 +11,7 @@
 }
 
 .project-div:hover {
-    scale: 1.05;
+    scale: 1.01;
     transition: ease-in-out 0.4s;
 }
 
